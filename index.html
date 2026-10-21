@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad Informática | Plataforma Educativa FES Cuautitlán UNAM</title>
+    <!-- Favicon al lado del título de la pestaña del navegador -->
+    <link rel="icon" type="image/png" href="static/media/logoDeLaFesc.png">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <!-- BARRA FIJA SUPERIOR -->
+    <div class="barra-fija">
+        <header>
+            <div class="header-container">
+                <!-- Escudo Izquierdo (FESC) al lado del título -->
+                <div class="logo-container logo-izq">
+                    <img src="static/media/logo_fesc_negro.png" alt="Escudo FES Cuautitlán" class="logo-escuela">
+                </div>
+                
+                <div class="header-titulos">
+                    <h1>Licenciatura en Informática</h1>
+                    <h2>Plataforma de Aprendizaje - Seguridad Informática (Clave: 702)</h2>
+                    <div class="header-subinfo">Facultad de Estudios Superiores Cuautitlán | Universidad Nacional Autónoma de México</div>
+                </div>
+
+                <!-- Escudo Derecho (UNAM) -->
+                <div class="logo-container logo-der">
+                    <img src="static/media/UNAM-Logo.png" alt="Escudo UNAM" class="logo-escuela">
+                </div>
+            </div>
+        </header>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <a href="javascript:void(0)" onclick="cambiarVista('vista-inicio', this)" id="nav-inicio" class="active">Inicio</a>
+            <a href="javascript:void(0)" onclick="cambiarVista('vista-temario', this)" id="nav-temario">Temario</a>
+            <a href="javascript:void(0)" onclick="cambiarVista('vista-recursos', this)" id="nav-recursos">Recursos</a>
+            <a href="javascript:void(0)" onclick="cambiarVista('vista-evaluacion', this)" id="nav-evaluacion">Evaluación</a>
+        </nav>
+    </div>
+
+    <!-- CONTENEDOR PRINCIPAL DINÁMICO -->
+    <main>
+        
+        <!-- ========================================== -->
+        <!-- VISTA 1: INICIO (TODAS LAS 6 UNIDADES)     -->
+        <!-- ========================================== -->
+        <section id="vista-inicio" class="seccion-vista">
+            <div class="bienvenida">
+                <h3>Bienvenido a la Asignatura de Seguridad Informática</h3>
+                <p>
+                    El objetivo general del curso es que el alumno identifique los principales alcances y conocimientos fundamentales acerca de la problemática de la seguridad informática, las técnicas de defensa, normatividad y auditoría, así como las repercusiones éticas, jurídicas y sociales que tiene y tendrá este campo en las organizaciones contemporáneas y el entorno nacional.
+                </p>
+                <div class="metricas-curso">
+                    <div class="metrica-chip"><strong>Clave:</strong> 702</div>
+                    <div class="metrica-chip"><strong>Semestre:</strong> Séptimo Semestre</div>
+                    <div class="metrica-chip"><strong>Créditos:</strong> 8 Créditos</div>
+                    <div class="metrica-chip"><strong>Horas Totales:</strong> 80 Horas (48 Teóricas / 32 Prácticas)</div>
+                    <div class="metrica-chip"><strong>Carácter:</strong> Obligatoria</div>
+                    <div class="metrica-chip"><strong>Área:</strong> Informática y computación</div>
+                </div>
+            </div>
+
+            <h3 class="seccion-titulo-centro">Unidades Temáticas del Programa Oficial</h3>
+            <p class="seccion-subtitulo-centro">
+                Explora a continuación cada uno de los 6 temas del plan de estudios aprobado por el H. Consejo Técnico de la FES Cuautitlán. Haz clic en cualquier módulo para acceder a sus recursos didácticos completos.
+            </p>
+            
+            <div class="temas-grid">
+                
+                <!-- UNIDAD 1 -->
+                <article class="tema-card">
+                    <div class="tema-header">
+                        <div class="tema-header-info">
+                            <span class="tema-badge">Unidad 1</span>
+                            <h4>Introducción a la Seguridad Informática</h4>
+                        </div>
+                        <span class="tema-horas-badge">5 hrs Teóricas | 0 Prácticas</span>
+                    </div>
+                    <div class="tema-body">
+                        <p>Fundamentos teóricos y conceptuales de la seguridad informática, evolución histórica, estructura y estados del activo informativo, así como las propiedades cardinales de un sistema seguro.</p>
+                        <span class="subtemas-label">Subtemas Oficiales:</span>
+                        <ul>
+                            <li><strong>1.1.</strong> Definición de seguridad informática</li>
+                            <li><strong>1.2.</strong> Historia y estructura de la información</li>
+                            <li><strong>1.3.</strong> Tipos de seguridad (Física vs Lógica / Activa vs Pasiva)</li>
+                            <li><strong>1.4.</strong> Propiedades de un sistema seguro (Tríada CID: Confidencialidad, Integridad y Disponibilidad)</li>
+                        </ul>
+                        <div class="tema-footer">
+                            <button class="btn-explorar" onclick="abrirTemaRecurso(1)">
+                                Explorar Recursos y Material de Estudio →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- UNIDAD 2 -->
+                <article class="tema-card">
+                    <div class="tema-header">
+                        <div class="tema-header-info">
+                            <span class="tema-badge">Unidad 2</span>
+                            <h4>Problemáticas Actuales en Seguridad Informática</h4>
+                        </div>
+                        <span class="tema-horas-badge">5 hrs Teóricas | 0 Prácticas</span>
+                    </div>
+                    <div class="tema-body">
+                        <p>Identificación del panorama contemporáneo de amenazas y vulnerabilidades, taxonomía de ataques cibernéticos, servicios formales de seguridad (X.800) y pilares criptográficos modernos.</p>
+                        <span class="subtemas-label">Subtemas Oficiales:</span>
+                        <ul>
+                            <li><strong>2.1.</strong> Vulnerabilidades, amenazas y ataques</li>
+                            <li><strong>2.2.</strong> Servicios de seguridad (Control de acceso, autenticación, no repudio)</li>
+                            <li><strong>2.3.</strong> Criptografía aplicada a la seguridad informática (Simétrica, Asimétrica y Hash)</li>
+                        </ul>
+                        <div class="tema-footer">
+                            <button class="btn-explorar" onclick="abrirTemaRecurso(2)">
+                                Explorar Recursos y Material de Estudio →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- UNIDAD 3 -->
+                <article class="tema-card">
+                    <div class="tema-header">
+                        <div class="tema-header-info">
+                            <span class="tema-badge">Unidad 3</span>
+                            <h4>Políticas y Normatividad Vigentes</h4>
+                        </div>
+                        <span class="tema-horas-badge">10 hrs Teóricas | 0 Prácticas</span>
+                    </div>
+                    <div class="tema-body">
+                        <p>Gobernanza de la seguridad institucional, formulación de directrices de seguridad, metodologías de gestión y análisis de riesgos, auditorías y marco jurídico mexicano e internacional.</p>
+                        <span class="subtemas-label">Subtemas Oficiales:</span>
+                        <ul>
+                            <li><strong>3.1.</strong> Misión de la seguridad</li>
+                            <li><strong>3.2.</strong> Definición de política de seguridad</li>
+                            <li><strong>3.3.</strong> Diseño de políticas</li>
+                            <li><strong>3.4.</strong> Análisis de riesgos (MAGERIT, ISO 27005)</li>
+                            <li><strong>3.5.</strong> Análisis de vulnerabilidades</li>
+                            <li><strong>3.6.</strong> Normatividad Internacional y Nacional vigente (ISO 27001, Código Penal Federal, LFPDPPP)</li>
+                        </ul>
+                        <div class="tema-footer">
+                            <button class="btn-explorar" onclick="abrirTemaRecurso(3)">
+                                Explorar Recursos y Material de Estudio →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- UNIDAD 4 -->
+                <article class="tema-card">
+                    <div class="tema-header">
+                        <div class="tema-header-info">
+                            <span class="tema-badge">Unidad 4</span>
+                            <h4>Detección de Intrusos</h4>
+                        </div>
+                        <span class="tema-horas-badge">9 hrs Teóricas | 10 Prácticas</span>
+                    </div>
+                    <div class="tema-body">
+                        <p>Diseño e implementación de mecanismos de defensa lógica y física, sistemas de detección y prevención de intrusos (IDS/IPS), análisis de registros y monitoreo perimetral de incidentes.</p>
+                        <span class="subtemas-label">Subtemas Oficiales:</span>
+                        <ul>
+                            <li><strong>4.1.</strong> Mecanismos de seguridad
+                                <br><small style="color:#4A5568;">&nbsp;&nbsp;• 4.1.1. Seguridad Lógica (MFA, RBAC, Hardening)</small>
+                                <br><small style="color:#4A5568;">&nbsp;&nbsp;• 4.1.2. Seguridad Física (Datacenters, HVAC, Extinción gas)</small>
+                            </li>
+                            <li><strong>4.2.</strong> Herramientas de análisis de riesgos y detección (Snort, Suricata, Nmap, SIEM)</li>
+                        </ul>
+                        <div class="tema-footer">
+                            <button class="btn-explorar" onclick="abrirTemaRecurso(4)">
+                                Explorar Recursos y Material de Estudio →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- UNIDAD 5 -->
+                <article class="tema-card">
+                    <div class="tema-header">
+                        <div class="tema-header-info">
+                            <span class="tema-badge">Unidad 5</span>
+                            <h4>Código Malicioso</h4>
+                        </div>
+                        <span class="tema-horas-badge">9 hrs Teóricas | 10 Prácticas</span>
+                    </div>
+                    <div class="tema-body">
+                        <p>Estudio de los tipos de malware, vectores de infección, mecanismos de replicación en redes, denegación de servicios y análisis de tráfico promiscuo en entornos informáticos.</p>
+                        <span class="subtemas-label">Subtemas Oficiales:</span>
+                        <ul>
+                            <li><strong>5.1.</strong> Ataques y variantes de software malicioso:
+                                <br><small style="color:#4A5568;">&nbsp;&nbsp;• 5.1.1. DoS / DDoS (Negación de servicio)</small>
+                                <br><small style="color:#4A5568;">&nbsp;&nbsp;• 5.1.2. Troyanos</small>
+                                <br><small style="color:#4A5568;">&nbsp;&nbsp;• 5.1.3. Virus</small>
+                                <br><small style="color:#4A5568;">&nbsp;&nbsp;• 5.1.4. Gusanos</small>
+                                <br><small style="color:#4A5568;">&nbsp;&nbsp;• 5.1.5. Bombas lógicas</small>
+                                <br><small style="color:#4A5568;">&nbsp;&nbsp;• 5.1.6. Sniffers (Captura de tráfico promiscuo)</small>
+                            </li>
+                        </ul>
+                        <div class="tema-footer">
+                            <button class="btn-explorar" onclick="abrirTemaRecurso(5)">
+                                Explorar Recursos y Material de Estudio →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- UNIDAD 6 -->
+                <article class="tema-card">
+                    <div class="tema-header">
+                        <div class="tema-header-info">
+                            <span class="tema-badge">Unidad 6</span>
+                            <h4>Seguridad en Redes</h4>
+                        </div>
+                        <span class="tema-horas-badge">10 hrs Teóricas | 12 Prácticas</span>
+                    </div>
+                    <div class="tema-body">
+                        <p>Arquitectura de comunicaciones confiables, esquemas de defensa perimetral, túneles cifrados, autenticación centralizada por tickets, cortafuegos y seguridad en redes inalámbricas 802.11.</p>
+                        <span class="subtemas-label">Subtemas Oficiales:</span>
+                        <ul>
+                            <li><strong>6.1.</strong> Esquemas de seguridad (Defensa en profundidad, DMZ, Zero Trust)</li>
+                            <li><strong>6.2.</strong> Niveles de seguridad en el modelo OSI / TCP-IP</li>
+                            <li><strong>6.3.</strong> Kerberos (Autenticación KDC y Tickets)</li>
+                            <li><strong>6.4.</strong> SSH (Secure Shell)</li>
+                            <li><strong>6.5.</strong> SSL / TLS (Handshake, Certificados X.509 y HTTPS)</li>
+                            <li><strong>6.6.</strong> Firewalls (Stateless, Stateful, WAF e iptables)</li>
+                            <li><strong>6.7.</strong> Protocolos de seguridad en redes inalámbricas (WEP, WPA, WPA2, WPA3)</li>
+                        </ul>
+                        <div class="tema-footer">
+                            <button class="btn-explorar" onclick="abrirTemaRecurso(6)">
+                                Explorar Recursos y Material de Estudio →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- VISTA 2: TEMARIO (PDF OFICIAL)             -->
+        <!-- ========================================== -->
+        <section id="vista-temario" class="seccion-vista vista-oculta">
+            <div class="bienvenida">
+                <h3>Programa Oficial de la Asignatura</h3>
+                <p>Consulta el documento curricular completo y oficial de la asignatura Seguridad Informática (Clave: 702), aprobado para la Licenciatura en Informática de la Facultad de Estudios Superiores Cuautitlán, UNAM.</p>
+                <div class="metricas-curso">
+                    <div class="metrica-chip">Documento Oficial UNAM FESC</div>
+                    <div class="metrica-chip">4 Páginas Integrales</div>
+                    <div class="metrica-chip">Modalidad Curso - Taller</div>
+                </div>
+            </div>
+            <div class="pdf-viewer">
+                <iframe src="static/media/seguridad_informatica.pdf" title="Temario Seguridad Informática FESC UNAM"></iframe>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- VISTA 3: RECURSOS DIDÁCTICOS Y MULTIMEDIA  -->
+        <!-- ========================================== -->
+        <section id="vista-recursos" class="seccion-vista vista-oculta">
+            
+            <div class="recursos-hero">
+                <h3>Centro de Recursos Didácticos y Multimedia UNAM</h3>
+                <p>
+                    Espacio integral de autoaprendizaje con explicaciones teóricas exhaustivas de cada subtema, diagramas de arquitectura en alta resolución, laboratorios de comandos prácticos comentados, videoteca oficial de la UNAM (UNAM-CERT, TV UNAM, AprendeTIC DGTIC y Facultad de Ingeniería) y bibliografía institucional recomendada.
+                </p>
+            </div>
+
+            <!-- SELECTOR INTERACTIVO DE LAS 6 UNIDADES -->
+            <div class="selector-temas-wrapper">
+                <div class="selector-temas-titulo">
+                    <span>Selecciona una unidad para explorar su contenido detallado:</span>
+                </div>
+                <div class="selector-temas-grid">
+                    <button class="selector-tema-btn activo" onclick="seleccionarUnidadRecurso(1)" id="tab-recurso-1">
+                        <span class="selector-tema-num">Unidad 1</span>
+                        <span class="selector-tema-nombre">Introducción a la Seguridad</span>
+                    </button>
+                    <button class="selector-tema-btn" onclick="seleccionarUnidadRecurso(2)" id="tab-recurso-2">
+                        <span class="selector-tema-num">Unidad 2</span>
+                        <span class="selector-tema-nombre">Problemáticas y Criptografía</span>
+                    </button>
+                    <button class="selector-tema-btn" onclick="seleccionarUnidadRecurso(3)" id="tab-recurso-3">
+                        <span class="selector-tema-num">Unidad 3</span>
+                        <span class="selector-tema-nombre">Políticas y Normatividad</span>
+                    </button>
+                    <button class="selector-tema-btn" onclick="seleccionarUnidadRecurso(4)" id="tab-recurso-4">
+                        <span class="selector-tema-num">Unidad 4</span>
+                        <span class="selector-tema-nombre">Detección de Intrusos</span>
+                    </button>
+                    <button class="selector-tema-btn" onclick="seleccionarUnidadRecurso(5)" id="tab-recurso-5">
+                        <span class="selector-tema-num">Unidad 5</span>
+                        <span class="selector-tema-nombre">Código Malicioso</span>
+                    </button>
+                    <button class="selector-tema-btn" onclick="seleccionarUnidadRecurso(6)" id="tab-recurso-6">
+                        <span class="selector-tema-num">Unidad 6</span>
+                        <span class="selector-tema-nombre">Seguridad en Redes</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CONTENEDOR UNIDAD 1 -->
+            <div class="unidad-recurso-panel activo" id="panel-unidad-1">
+                <div class="unidad-detalle-header">
+                    <div class="unidad-detalle-info">
+                        <span class="tema-badge">Unidad Temática 1</span>
+                        <h3>1. Introducción a la Seguridad Informática</h3>
+                        <div class="unidad-meta-tags">
+                            <span class="tag-badge tag-horas">⏱ 5 Horas Teóricas | 0 Prácticas</span>
+                            <span class="tag-badge tag-carrera">Lic. en Informática - FES Cuautitlán</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unidad-objetivo-box">
+                    <strong>Objetivo de la Unidad:</strong>
+                    <p>El estudiante comprenderá la naturaleza multidimensional de la seguridad informática, la distinción formal entre seguridad física y lógica, los estados fundamentales del dato y las propiedades que definen la confiabilidad de cualquier sistema computacional.</p>
+                </div>
+
+                <div class="unidad-contenido">
+                    
+                    <!-- Subtema 1.1 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">1.1</span> Definición de Seguridad Informática</h4>
+                        <p class="subtema-texto">
+                            La <strong>seguridad informática</strong> es la disciplina del área computacional encargada de diseñar, implementar y auditar las medidas de protección tanto técnicas como operativas sobre la infraestructura tecnológica: hardware, sistemas operativos, servidores, redes de datos y aplicaciones de software.
+                        </p>
+                        <div class="nota-pedagogica">
+                            <h5>Distinción Académica Clave (FESC - UNAM):</h5>
+                            <p><strong>Seguridad de la Información vs. Seguridad Informática:</strong> La <em>Seguridad de la Información</em> abarca la protección integral del activo cognitivo (datos e información) sin importar el soporte en que se encuentre (físico, documental impreso o digital). La <em>Seguridad Informática</em> se enfoca específicamente en los sistemas computacionales e infraestructura tecnológica que almacenan, transmiten y procesan dichos datos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Subtema 1.2 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">1.2</span> Historia y Estructura de la Información</h4>
+                        <p class="subtema-texto">
+                            Históricamente, la seguridad comenzó vinculada a la correspondencia militar y diplomática mediante técnicas de esteganografía y cifrados clásicos de sustitución y transposición (la Escítala espartana y el Cifrado César). Con la Segunda Guerra Mundial y el desarrollo de la máquina <em>Enigma</em>, la criptoanalítica cobró carácter científico y formal de la mano de matemáticos como Alan Turing.
+                        </p>
+                        <p class="subtema-texto">
+                            El nacimiento de <strong>ARPANET</strong> en 1969 y la posterior expansión de la suite de protocolos TCP/IP en los años 80 y 90 revolucionaron la interacción humana, pero introdujeron un vector de riesgo sin precedentes: la interconexión global entre equipos remotos. El 2 de noviembre de 1988, el <em>Gusano de Morris</em> paralizó aproximadamente el 10% de las computadoras conectadas a Internet, marcando el nacimiento formal de los equipos de respuesta a incidentes de seguridad (CERT).
+                        </p>
+
+                        <h5 style="color: var(--azul-institucional); margin: 18px 0 10px 0;">Los Tres Estados Estructurales de la Información:</h5>
+                        <ul class="lista-conceptos">
+                            <li><strong>Datos en Reposo (Data at Rest):</strong> Información almacenada en discos duros, bases de datos relacionales/NoSQL, cintas magnéticas o medios extraíbles. Su protección depende de algoritmos de cifrado de almacenamiento completo (Full Disk Encryption, AES-XTS) y controles de acceso al sistema de archivos.</li>
+                            <li><strong>Datos en Tránsito (Data in Transit):</strong> Paquetes de datos que circulan a través de medios guiados (fibra óptica, par trenzado) o no guiados (Wi-Fi, satélite). Su protección exige canales seguros cifrados punto a punto (TLS, SSH, IPSec).</li>
+                            <li><strong>Datos en Uso o Procesamiento (Data in Use):</strong> Información cargada activamente en memoria RAM, registros del procesador o memoria caché de la CPU mientras se ejecuta una tarea. Se protege mediante segmentación de memoria (ASLR, DEP) y tecnologías de enclaves seguros (Confidential Computing).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Subtema 1.3 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">1.3</span> Tipos de Seguridad</h4>
+                        <p class="subtema-texto">
+                            En las organizaciones modernas y en los centros de cómputo universitarios, la seguridad se clasifica a través de dos dimensiones complementarias:
+                        </p>
+                        
+                        <div class="tabla-wrapper">
+                            <table class="tabla-comparativa">
+                                <thead>
+                                    <tr>
+                                        <th>Criterio</th>
+                                        <th>Modalidad Primaria</th>
+                                        <th>Modalidad Secundaria</th>
+                                        <th>Ejemplos Prácticos de Aplicación</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Por el ámbito del activo</strong></td>
+                                        <td><strong>Seguridad Física:</strong> Barreras y dispositivos tangibles para proteger los equipos contra desastres naturales, incendios, fallas eléctricas o intrusiones de personas no autorizadas.</td>
+                                        <td><strong>Seguridad Lógica:</strong> Salvaguardas virtuales, software y protocolos para regular el acceso a programas, ficheros y servicios computacionales.</td>
+                                        <td>Torniquetes biométricos, CCTV, supresión por gas FM-200 vs. Listas de Control de Acceso (ACL), contraseñas robustas, firewall y cifrado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Por el momento de intervención</strong></td>
+                                        <td><strong>Seguridad Activa:</strong> Medidas preventivas orientadas a evitar de manera anticipada que una amenaza logre explotar una debilidad del sistema.</td>
+                                        <td><strong>Seguridad Pasiva:</strong> Mecanismos diseñados para mitigar las consecuencias y restablecer la operatividad una vez que el incidente ya ha tenido lugar.</td>
+                                        <td>Instalación de parches de seguridad, antivirus heurístico, WAF vs. Respaldos externos (Backups 3-2-1), planes de recuperación ante desastres (DRP/BCP).</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Subtema 1.4 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">1.4</span> Propiedades de un Sistema Seguro</h4>
+                        <p class="subtema-texto">
+                            El pilar central de la seguridad de la información es la <strong>Tríada CID</strong> (o Tríada CIA por sus siglas en inglés: <em>Confidentiality, Integrity, Availability</em>). Para que un sistema sea catalogado como seguro, debe garantizar estas propiedades de manera concurrente y armónica:
+                        </p>
+
+                        <!-- DIAGRAMA SVG DE LA TRÍADA CID -->
+                        <div class="diagrama-contenedor">
+                            <svg viewBox="0 0 760 380" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="760" height="380" fill="#F8FAFC" rx="12"/>
+                                <!-- Triangulo central -->
+                                <polygon points="380,50 180,310 580,310" fill="#EBF1F9" stroke="#002B7F" stroke-width="4" stroke-linejoin="round"/>
+                                
+                                <!-- Centro: Activo de Informacion -->
+                                <circle cx="380" cy="225" r="55" fill="#D4AF37" stroke="#002B7F" stroke-width="3"/>
+                                <text x="380" y="220" font-size="14" font-weight="bold" fill="#001A4D" text-anchor="middle">INFORMACIÓN</text>
+                                <text x="380" y="240" font-size="11" font-weight="600" fill="#001A4D" text-anchor="middle">(Activo Crítico)</text>
+
+                                <!-- Vertice 1: Confidencialidad -->
+                                <circle cx="380" cy="50" r="42" fill="#002B7F" stroke="#D4AF37" stroke-width="3"/>
+                                <text x="380" y="55" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">CONFIDENCIALIDAD</text>
+                                
+                                <!-- Vertice 2: Integridad -->
+                                <circle cx="180" cy="310" r="42" fill="#002B7F" stroke="#D4AF37" stroke-width="3"/>
+                                <text x="180" y="315" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">INTEGRIDAD</text>
+
+                                <!-- Vertice 3: Disponibilidad -->
+                                <circle cx="580" cy="310" r="42" fill="#002B7F" stroke="#D4AF37" stroke-width="3"/>
+                                <text x="580" y="315" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">DISPONIBILIDAD</text>
+
+                                <!-- Explicaciones perimetrales -->
+                                <rect x="260" y="10" width="240" height="26" rx="5" fill="#FFFFFF" stroke="#CBD5E1"/>
+                                <text x="380" y="27" font-size="11" fill="#4A5568" text-anchor="middle">Solo usuarios autorizados acceden</text>
+
+                                <rect x="30" y="335" width="260" height="26" rx="5" fill="#FFFFFF" stroke="#CBD5E1"/>
+                                <text x="160" y="352" font-size="11" fill="#4A5568" text-anchor="middle">Datos exactos y sin alteración no autorizada</text>
+
+                                <rect x="470" y="335" width="260" height="26" rx="5" fill="#FFFFFF" stroke="#CBD5E1"/>
+                                <text x="600" y="352" font-size="11" fill="#4A5568" text-anchor="middle">Sistemas accesibles cuando se requieran</text>
+                            </svg>
+                            <p class="diagrama-epigrafe">Figura 1.1: Modelo conceptual de la Tríada CID con los tres pilares de un sistema seguro (FESC UNAM).</p>
+                        </div>
+
+                        <ul class="lista-conceptos">
+                            <li><strong>Confidencialidad:</strong> Garantiza que la información no sea divulgada ni puesta al alcance de individuos, entidades o procesos no autorizados. Mecanismos: cifrado simétrico y asimétrico, permisos UNIX (`chmod/chown`), y enmascaramiento de datos.</li>
+                            <li><strong>Integridad:</strong> Salvaguarda la exactitud, fidelidad y completitud de la información y sus métodos de procesamiento, previniendo modificaciones espurias, borrado malicioso o inserciones fraudulentas. Mecanismos: hashes criptográficos (SHA-256), firmas digitales y registros transaccionales.</li>
+                            <li><strong>Disponibilidad:</strong> Asegura que los usuarios autorizados tengan acceso ininterrumpido a la información y a los servicios asociados cuando lo requieran. Mecanismos: alta disponibilidad, clusters, balanceo de carga, enlaces redundantes y esquemas RAID.</li>
+                            <li><strong>Propiedades Complementarias Modernas:</strong> <em>Autenticidad</em> (validación de la legítima identidad del emisor), <em>No Repudio</em> (imposibilidad probatoria de negar la autoría o recepción de una transacción), y <em>Trazabilidad / Auditabilidad</em> (registro cronológico inmutable de eventos del sistema).</li>
+                        </ul>
+                    </div>
+
+                    <!-- VIDEOTECA UNAM -->
+                    <div class="seccion-videoteca">
+                        <div class="seccion-videoteca-titulo">
+                            <span>🎥 Videoteca Académica UNAM: Unidad 1</span>
+                        </div>
+                        <p class="seccion-videoteca-sub">Conferencias magistrales y cápsulas didácticas oficiales producidas por UNAM-CERT, DGTIC y TV UNAM.</p>
+                        
+                        <div class="videos-grid">
+                            <!-- Video 1 -->
+                            <div class="video-card">
+                                <div class="video-embed-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/W97uXG0VUfU?rel=0" title="Seguridad en tecnologías de la información - UNAM CERT" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="video-info">
+                                    <span class="video-emisor-badge">UNAM-CERT / @SeguridadTV</span>
+                                    <h5 class="video-titulo">Seguridad en Tecnologías de la Información (Conferencia UNAM-CERT)</h5>
+                                    <p class="video-desc">Conferencia del Equipo de Respuesta a Incidentes de la UNAM describiendo los factores de riesgo, la Tríada CID y los procesos institucionales de protección.</p>
+                                    <div class="video-acciones">
+                                        <a href="https://www.youtube.com/watch?v=W97uXG0VUfU" target="_blank" class="btn-video-yt">▶ Ver en YouTube Oficial ↗</a>
+                                        <a href="https://www.youtube.com/@SeguridadTV" target="_blank" class="btn-video-canal">Canal @SeguridadTV ↗</a>
+                                    </div>
+                                    <p class="video-aviso"><small>ℹ️ Si tu navegador restringe la reproducción local en file://, pulsa "Ver en YouTube Oficial".</small></p>
+                                </div>
+                            </div>
+
+                            <!-- Video 2 -->
+                            <div class="video-card">
+                                <div class="video-embed-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/5EqVoLlsc9k?rel=0" title="Consejos de Seguridad - UNAM CERT" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="video-info">
+                                    <span class="video-emisor-badge">UNAM-CERT / @SeguridadTV</span>
+                                    <h5 class="video-titulo">Consejos de Seguridad Digital - UNAM CERT</h5>
+                                    <p class="video-desc">Guía institucional producida por la UNAM con principios de seguridad activa, gestión de contraseñas y mitigación de amenazas cotidianas.</p>
+                                    <div class="video-acciones">
+                                        <a href="https://www.youtube.com/watch?v=5EqVoLlsc9k" target="_blank" class="btn-video-yt">▶ Ver en YouTube Oficial ↗</a>
+                                        <a href="https://www.unam-cert.unam.mx/" target="_blank" class="btn-video-canal">Portal UNAM-CERT ↗</a>
+                                    </div>
+                                    <p class="video-aviso"><small>ℹ️ Si tu navegador restringe la reproducción local en file://, pulsa "Ver en YouTube Oficial".</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FUENTES BIBLIOGRÁFICAS -->
+                    <div class="fuentes-container">
+                        <div class="fuentes-titulo">
+                            <span>📚 Fuentes de Consulta Oficiales del Temario UNAM</span>
+                        </div>
+                        <div class="fuentes-grid">
+                            <div class="fuente-item">
+                                <h6>Stallings, William (2010)</h6>
+                                <p><em>Cryptography and Network Security: Principles and Practice</em>, 5ta. Edición. Prentice Hall. Capítulos 1 y 2 (Conceptos básicos y arquitectura OSI de seguridad).</p>
+                            </div>
+                            <div class="fuente-item">
+                                <h6>Firtman, Salvador (2005)</h6>
+                                <p><em>Seguridad informática</em>, MP Ediciones. Capítulos introductorios sobre la definición y evolución de los riesgos en sistemas informáticos.</p>
+                            </div>
+                            <div class="fuente-item">
+                                <h6>Portal Oficial UNAM-CERT (DGTIC)</h6>
+                                <p>Documentos técnicos y recomendaciones para administradores y usuarios de la RedUNAM. <br><a href="https://www.unam-cert.unam.mx/" target="_blank">www.unam-cert.unam.mx</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="recursos-nav-footer">
+                    <span></span>
+                    <button class="btn-nav-unidad" onclick="seleccionarUnidadRecurso(2)">Ir a Unidad 2: Problemáticas Actuales →</button>
+                </div>
+            </div>
+
+            <!-- CONTENEDOR UNIDAD 2 -->
+            <div class="unidad-recurso-panel" id="panel-unidad-2">
+                <div class="unidad-detalle-header">
+                    <div class="unidad-detalle-info">
+                        <span class="tema-badge">Unidad Temática 2</span>
+                        <h3>2. Problemáticas Actuales en Seguridad Informática</h3>
+                        <div class="unidad-meta-tags">
+                            <span class="tag-badge tag-horas">⏱ 5 Horas Teóricas | 0 Prácticas</span>
+                            <span class="tag-badge tag-carrera">Lic. en Informática - FES Cuautitlán</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unidad-objetivo-box">
+                    <strong>Objetivo de la Unidad:</strong>
+                    <p>El estudiante identificará las relaciones causales entre vulnerabilidades, amenazas y ataques en entornos reales, comprenderá los servicios formales de seguridad del estándar X.800 y dominará los principios de la criptografía simétrica, asimétrica y funciones hash.</p>
+                </div>
+
+                <div class="unidad-contenido">
+                    
+                    <!-- Subtema 2.1 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">2.1</span> Vulnerabilidades, Amenazas y Ataques</h4>
+                        <p class="subtema-texto">
+                            En seguridad informática, es imperativo no confundir estos tres términos fundamentales que componen la cadena de explotación:
+                        </p>
+                        <ul class="lista-conceptos">
+                            <li><strong>Vulnerabilidad (Debilidad intrínseca):</strong> Defecto, fallo de diseño, error de programación (bug) o desconfiguración presente en el hardware, software, red o procedimientos organizacionales, que puede permitir a un tercero violar la política de seguridad. Se catalogan mediante el estándar internacional <strong>CVE (Common Vulnerabilities and Exposures)</strong> y se evalúan cuantitativamente a través de la métrica <strong>CVSS (Common Vulnerability Scoring System)</strong>.</li>
+                            <li><strong>Amenaza (Causa potencial):</strong> Cualquier circunstancia, evento, individuo o colectivo que tiene el potencial de causar daño a un sistema mediante la explotación indebida de una vulnerabilidad existente. Se clasifican en amenazas humanas deliberadas (hacktivistas, ciberdelincuentes, personal interno descontento), accidentales (errores operativos humanos) y desastres físico-ambientales.</li>
+                            <li><strong>Ataque (Acción deliberada):</strong> La materialización concreta e intencional en la cual un atacante ejecuta una técnica o herramienta (exploit) aprovechando una vulnerabilidad para vulnerar la confidencialidad, integridad o disponibilidad de un activo.</li>
+                        </ul>
+
+                        <div class="nota-pedagogica alerta">
+                            <h5>Fórmula de la Cadena de Compromiso:</h5>
+                            <p><strong>Riesgo Real = Amenaza activa × Vulnerabilidad existente × Impacto en el negocio.</strong> Si no existe vulnerabilidad, la amenaza no puede materializarse en un ataque exitoso; si no existe amenaza, la vulnerabilidad permanece latente pero inerte.</p>
+                        </div>
+                    </div>
+
+                    <!-- Subtema 2.2 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">2.2</span> Servicios de Seguridad</h4>
+                        <p class="subtema-texto">
+                            La norma internacional <strong>ITU-T X.800 / ISO 7498-2</strong> define formalmente los servicios de seguridad como aquellos procesos provistos por un sistema para garantizar una seguridad adecuada de los sistemas o la transferencia de datos:
+                        </p>
+                        <ul class="lista-conceptos">
+                            <li><strong>Servicio de Autenticación:</strong> Asegura la veracidad de la identidad de las partes que se comunican. Contempla tanto la autenticación de la entidad homóloga (conexión activa) como la autenticación del origen de los datos (sin conexión).</li>
+                            <li><strong>Servicio de Control de Acceso:</strong> Prevención de la utilización no autorizada de recursos de red o cómputo, aplicando políticas basadas en identidad, roles o reglas.</li>
+                            <li><strong>Servicio de Confidencialidad de Datos:</strong> Protección de la información transmitida o almacenada contra intercepción pasiva y revelación ilícita.</li>
+                            <li><strong>Servicio de Integridad de Datos:</strong> Certeza de que los datos recibidos corresponden exactamente a los enviados, sin modificaciones, duplicaciones, inserciones o reordenamientos no autorizados.</li>
+                            <li><strong>Servicio de No Repudio:</strong> Mecanismo probatorio que impide que el emisor de un mensaje niegue haberlo transmitido (No Repudio de Origen), o que el destinatario niegue haberlo recibido (No Repudio de Destino).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Subtema 2.3 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">2.3</span> Criptografía Aplicada a la Seguridad Informática</h4>
+                        <p class="subtema-texto">
+                            La criptografía es la rama matemática y computacional que provee los mecanismos técnicos para materializar los servicios de seguridad. En la práctica informática contemporánea se divide en tres ramas fundamentales:
+                        </p>
+
+                        <!-- DIAGRAMA SVG DE CRIPTOGRAFÍA -->
+                        <div class="diagrama-contenedor">
+                            <svg viewBox="0 0 760 340" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="760" height="340" fill="#F8FAFC" rx="12"/>
+                                <!-- Bloque Simetrico -->
+                                <rect x="30" y="30" width="335" height="280" rx="8" fill="#FFFFFF" stroke="#002B7F" stroke-width="2"/>
+                                <rect x="30" y="30" width="335" height="38" rx="8" fill="#002B7F"/>
+                                <text x="197" y="55" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">CRIPTOGRAFÍA SIMÉTRICA (Clave Secreta)</text>
+                                
+                                <circle cx="197" cy="120" r="28" fill="#D4AF37" stroke="#001A4D" stroke-width="2"/>
+                                <text x="197" y="125" font-size="11" font-weight="bold" fill="#001A4D" text-anchor="middle">1 CLAVE</text>
+                                
+                                <text x="60" y="180" font-size="12" fill="#2D3748">• Misma clave para cifrar y descifrar</text>
+                                <text x="60" y="205" font-size="12" fill="#2D3748">• Extremadamente veloz y eficiente</text>
+                                <text x="60" y="230" font-size="12" fill="#2D3748">• Problema crítico: Distribución segura de claves</text>
+                                <text x="60" y="260" font-size="12" font-weight="bold" fill="#002B7F">Algoritmos: AES-128/256, ChaCha20, 3DES</text>
+
+                                <!-- Bloque Asimetrico -->
+                                <rect x="395" y="30" width="335" height="280" rx="8" fill="#FFFFFF" stroke="#D4AF37" stroke-width="2"/>
+                                <rect x="395" y="30" width="335" height="38" rx="8" fill="#D4AF37"/>
+                                <text x="562" y="55" font-size="14" font-weight="bold" fill="#001A4D" text-anchor="middle">CRIPTOGRAFÍA ASIMÉTRICA (Clave Pública)</text>
+
+                                <circle cx="510" cy="120" r="24" fill="#002B7F" stroke="#FFFFFF" stroke-width="2"/>
+                                <text x="510" y="124" font-size="9" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PÚBLICA</text>
+                                <circle cx="615" cy="120" r="24" fill="#C62828" stroke="#FFFFFF" stroke-width="2"/>
+                                <text x="615" y="124" font-size="9" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PRIVADA</text>
+
+                                <text x="420" y="180" font-size="12" fill="#2D3748">• Par de claves matemáticamente enlazadas</text>
+                                <text x="420" y="205" font-size="12" fill="#2D3748">• Resuelve el intercambio seguro en canales abiertos</text>
+                                <text x="420" y="230" font-size="12" fill="#2D3748">• Base de firmas digitales y certificados X.509</text>
+                                <text x="420" y="260" font-size="12" font-weight="bold" fill="#002B7F">Algoritmos: RSA, ECC (Curvas Elípticas), Diffie-Hellman</text>
+                            </svg>
+                            <p class="diagrama-epigrafe">Figura 2.1: Comparativa arquitectónica entre criptografía simétrica y asimétrica de clave pública.</p>
+                        </div>
+
+                        <!-- TERMINAL PRÁCTICA OPENSSL -->
+                        <div class="terminal-card">
+                            <div class="terminal-header">
+                                <div class="terminal-dots">
+                                    <div class="dot rojo"></div>
+                                    <div class="dot amarillo"></div>
+                                    <div class="dot verde"></div>
+                                </div>
+                                <span>Laboratorio Criptográfico en Consola: OpenSSL (FESC - Informática)</span>
+                            </div>
+                            <div class="terminal-body">
+                                <span class="comment"># 1. Generar hash criptográfico SHA-256 de un archivo para verificar integridad:</span><br>
+                                <span class="cmd">$ sha256sum reporte_calificaciones.pdf</span><br>
+                                <span class="output">a5d8f619b014...78e9  reporte_calificaciones.pdf</span><br><br>
+                                
+                                <span class="comment"># 2. Generar un par de claves asimétricas RSA de 2048 bits con OpenSSL:</span><br>
+                                <span class="cmd">$ openssl genrsa -out clave_privada.pem 2048</span><br>
+                                <span class="cmd">$ openssl rsa -in clave_privada.pem -pubout -out clave_publica.pem</span><br>
+                                <span class="output">writing RSA key -> clave_publica.pem generada con éxito.</span><br><br>
+
+                                <span class="comment"># 3. Cifrado simétrico de un archivo confidencial con algoritmo estándar AES-256 en modo CBC:</span><br>
+                                <span class="cmd">$ openssl enc -aes-256-cbc -salt -pbkdf2 -in datos.txt -out datos.enc</span>
+                            </div>
+                        </div>
+
+                        <ul class="lista-conceptos">
+                            <li><strong>Funciones Hash Criptográficas:</strong> Algoritmos deterministas de un solo sentido (One-Way) que transforman un mensaje de cualquier longitud arbitraria en una cadena de longitud fija (resumen o digest). Propiedades obligatorias: <em>Resistencia a la preimagen</em> (imposible deducir el mensaje original a partir del hash), <em>Resistencia a la segunda preimagen</em> y <em>Resistencia a colisiones</em> (dos mensajes distintos nunca deben generar el mismo hash), además del <em>Efecto Avalancha</em> (modificar un solo bit de entrada altera drásticamente más del 50% de los bits del hash resultante). Ejemplos: SHA-256, SHA-3, BLAKE2.</li>
+                            <li><strong>Firma Digital y PKI (Infraestructura de Clave Pública):</strong> La firma digital se genera calculando el hash del documento y cifrándolo con la <em>clave privada</em> del firmante. Cualquier receptor puede descifrarlo usando la <em>clave pública</em> del emisor y comparar el hash resultante, garantizando autenticidad, integridad y no repudio.</li>
+                        </ul>
+                    </div>
+
+                    <!-- VIDEOTECA UNAM -->
+                    <div class="seccion-videoteca">
+                        <div class="seccion-videoteca-titulo">
+                            <span>🎥 Videoteca Académica UNAM: Criptografía y Amenazas</span>
+                        </div>
+                        <p class="seccion-videoteca-sub">Conferencias de investigadoras e investigadores de la UNAM sobre ciencias criptográficas y gestión de fallas.</p>
+                        
+                        <div class="videos-grid">
+                            <div class="video-card">
+                                <div class="video-embed-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/cEcv1GxiA9s?rel=0" title="Integrando seguridad en tu desarrollo web - AprendeTIC UNAM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="video-info">
+                                    <span class="video-emisor-badge">AprendeTIC UNAM / DGTIC</span>
+                                    <h5 class="video-titulo">Integrando Seguridad en Sistemas y Desarrollo Web</h5>
+                                    <p class="video-desc">Seminario de la DGTIC UNAM sobre ciclo de vida seguro, mitigación de vulnerabilidades y servicios formales de autenticación y cifrado.</p>
+                                    <div class="video-acciones">
+                                        <a href="https://www.youtube.com/watch?v=cEcv1GxiA9s" target="_blank" class="btn-video-yt">▶ Ver en YouTube Oficial ↗</a>
+                                        <a href="https://www.youtube.com/@aprendeticunam2301" target="_blank" class="btn-video-canal">Canal AprendeTIC ↗</a>
+                                    </div>
+                                    <p class="video-aviso"><small>ℹ️ Si tu navegador restringe la reproducción local en file://, pulsa "Ver en YouTube Oficial".</small></p>
+                                </div>
+                            </div>
+
+                            <div class="video-card">
+                                <div class="video-embed-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/SmXVsMEFCOY?rel=0" title="Análisis de Incidentes y Amenazas TIC UNAM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="video-info">
+                                    <span class="video-emisor-badge">Análisis Técnico / Comunidad UNAM</span>
+                                    <h5 class="video-titulo">Análisis Técnico de Amenazas y Respuesta DGTIC</h5>
+                                    <p class="video-desc">Estudio detallado de la superficie de ataque, mitigación de exploits y mecanismos de defensa implementados en redes universitarias.</p>
+                                    <div class="video-acciones">
+                                        <a href="https://www.youtube.com/watch?v=SmXVsMEFCOY" target="_blank" class="btn-video-yt">▶ Ver en YouTube Oficial ↗</a>
+                                        <a href="https://www.unam-cert.unam.mx/" target="_blank" class="btn-video-canal">Portal UNAM-CERT ↗</a>
+                                    </div>
+                                    <p class="video-aviso"><small>ℹ️ Si tu navegador restringe la reproducción local en file://, pulsa "Ver en YouTube Oficial".</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FUENTES -->
+                    <div class="fuentes-container">
+                        <div class="fuentes-titulo">
+                            <span>📚 Fuentes de Consulta Oficiales del Temario UNAM</span>
+                        </div>
+                        <div class="fuentes-grid">
+                            <div class="fuente-item">
+                                <h6>Caballero Gil, Pino (1997)</h6>
+                                <p><em>Seguridad informática: técnicas criptográficas</em>. Editorial Alfaomega. Fundamentos algebraicos de cifrados en bloque y clave pública.</p>
+                            </div>
+                            <div class="fuente-item">
+                                <h6>Stallings, William (2010)</h6>
+                                <p><em>Cryptography and Network Security</em>. Capítulos 3, 9 y 11 sobre estándares AES, RSA, Curvas Elípticas y Algoritmos Hash SHA.</p>
+                            </div>
+                            <div class="fuente-item">
+                                <h6>Dra. Rocío Aldeco Pérez (Facultad de Ingeniería, UNAM)</h6>
+                                <p>Materiales didácticos y publicaciones del Departamento de Computación sobre criptografía aplicada y seguridad informática.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="recursos-nav-footer">
+                    <button class="btn-nav-unidad" onclick="seleccionarUnidadRecurso(1)">← Ir a Unidad 1</button>
+                    <button class="btn-nav-unidad" onclick="seleccionarUnidadRecurso(3)">Ir a Unidad 3: Políticas y Normatividad →</button>
+                </div>
+            </div>
+
+            <!-- CONTENEDOR UNIDAD 3 -->
+            <div class="unidad-recurso-panel" id="panel-unidad-3">
+                <div class="unidad-detalle-header">
+                    <div class="unidad-detalle-info">
+                        <span class="tema-badge">Unidad Temática 3</span>
+                        <h3>3. Políticas y Normatividad Vigentes</h3>
+                        <div class="unidad-meta-tags">
+                            <span class="tag-badge tag-horas">⏱ 10 Horas Teóricas | 0 Prácticas</span>
+                            <span class="tag-badge tag-carrera">Lic. en Informática - FES Cuautitlán</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unidad-objetivo-box">
+                    <strong>Objetivo de la Unidad:</strong>
+                    <p>El estudiante formulará políticas de seguridad de la información viables y alineadas a la misión organizativa, aplicará metodologías estandarizadas de análisis de riesgos y dominará el marco normativo internacional (ISO/IEC 27001) y la legislación mexicana aplicable a delitos informáticos.</p>
+                </div>
+
+                <div class="unidad-contenido">
+                    
+                    <!-- Subtema 3.1 & 3.2 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">3.1 y 3.2</span> Misión de la Seguridad y Definición de Política</h4>
+                        <p class="subtema-texto">
+                            La <strong>misión de la seguridad</strong> en toda entidad es preservar el valor y la continuidad de las operaciones, protegiendo los activos tangibles e intangibles contra amenazas externas e internas, asegurando el cumplimiento de las obligaciones regulatorias y fomentando una cultura de responsabilidad digital en la comunidad.
+                        </p>
+                        <p class="subtema-texto">
+                            Una <strong>política de seguridad de la información</strong> es una declaración formal de directrices, intenciones y normas emanadas de la alta dirección ejecutiva o institucional, en la cual se definen con precisión las conductas esperadas, las restricciones, las responsabilidades de los usuarios y las consecuencias en caso de transgresión.
+                        </p>
+                        <ul class="lista-conceptos">
+                            <li><strong>Políticas Rectoras de Alto Nivel:</strong> Establecen el compromiso institucional general y aplican a la totalidad de la organización.</li>
+                            <li><strong>Normas Específicas:</strong> Reglas mandatorias aplicadas a áreas tecnológicas concretas (ej. Política de uso de contraseñas, Política de teletrabajo, Política de respaldo de bases de datos).</li>
+                            <li><strong>Procedimientos Operativos:</strong> Guías paso a paso de ejecución técnica (ej. Procedimiento para dar de baja credenciales de acceso tras la desvinculación laboral).</li>
+                            <li><strong>Guías y Recomendaciones:</strong> Sugerencias voluntarias de buenas prácticas complementarias.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Subtema 3.3 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">3.3</span> Diseño de Políticas de Seguridad</h4>
+                        <p class="subtema-texto">
+                            El diseño efectivo de políticas sigue el ciclo de mejora continua <strong>PDCA (Planificar, Hacer, Verificar, Actuar)</strong>:
+                        </p>
+                        <div class="tabla-wrapper">
+                            <table class="tabla-comparativa">
+                                <thead>
+                                    <tr>
+                                        <th>Fase del Ciclo</th>
+                                        <th>Actividades Clave</th>
+                                        <th>Resultado Esperado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>1. Identificación de Requerimientos</strong></td>
+                                        <td>Mapeo de obligaciones legales vigentes, inventario de activos críticos y levantamiento de riesgos operacionales.</td>
+                                        <td>Matriz de alcance y requerimientos de cumplimiento.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>2. Redacción y Validación</strong></td>
+                                        <td>Redacción en lenguaje claro, alcanzable, verificable y sin ambigüedades técnicas, consensuado con áreas jurídicas y de TI.</td>
+                                        <td>Borrador integral de directrices de seguridad.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>3. Aprobación y Formalización</strong></td>
+                                        <td>Firma y respaldo explícito de la Dirección General o Junta de Gobierno institucional.</td>
+                                        <td>Documento oficial de carácter obligatorio.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>4. Difusión y Concienciación</strong></td>
+                                        <td>Campañas de capacitación y sensibilización periódica dirigida a empleados, docentes y estudiantes.</td>
+                                        <td>Aceptación formal y entendimiento del usuario.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>5. Auditoría y Actualización</strong></td>
+                                        <td>Revisión anual y ante incidentes mayores para adaptar las políticas a nuevas tecnologías y ciberamenazas.</td>
+                                        <td>Política vigente y resiliente en el tiempo.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Subtema 3.4 & 3.5 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">3.4 y 3.5</span> Análisis de Riesgos y Análisis de Vulnerabilidades</h4>
+                        <p class="subtema-texto">
+                            El análisis y gestión del riesgo informático se fundamenta en metodologías estandarizadas internacionalmente como <strong>MAGERIT v3</strong>, <strong>ISO/IEC 27005</strong> y <strong>NIST SP 800-30</strong>.
+                        </p>
+
+                        <!-- DIAGRAMA SVG DE CICLO DE GESTIÓN DE RIESGO -->
+                        <div class="diagrama-contenedor">
+                            <svg viewBox="0 0 760 220" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="760" height="220" fill="#F8FAFC" rx="12"/>
+                                <!-- Flechas de proceso continuo -->
+                                <g transform="translate(20, 40)">
+                                    <!-- Paso 1 -->
+                                    <rect x="0" y="0" width="130" height="80" rx="8" fill="#002B7F"/>
+                                    <text x="65" y="32" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1. IDENTIFICAR</text>
+                                    <text x="65" y="52" font-size="10" fill="#E2E8F0" text-anchor="middle">Activos y Valor</text>
+                                    
+                                    <polygon points="135,40 145,35 145,45" fill="#D4AF37"/>
+                                    <line x1="130" y1="40" x2="145" y2="40" stroke="#D4AF37" stroke-width="3"/>
+
+                                    <!-- Paso 2 -->
+                                    <rect x="150" y="0" width="130" height="80" rx="8" fill="#002B7F"/>
+                                    <text x="215" y="32" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2. ANALIZAR</text>
+                                    <text x="215" y="52" font-size="10" fill="#E2E8F0" text-anchor="middle">Amenazas y Fallas</text>
+
+                                    <polygon points="285,40 295,35 295,45" fill="#D4AF37"/>
+                                    <line x1="280" y1="40" x2="295" y2="40" stroke="#D4AF37" stroke-width="3"/>
+
+                                    <!-- Paso 3 -->
+                                    <rect x="300" y="0" width="130" height="80" rx="8" fill="#002B7F"/>
+                                    <text x="365" y="32" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3. EVALUAR</text>
+                                    <text x="365" y="52" font-size="10" fill="#E2E8F0" text-anchor="middle">Prob. × Impacto</text>
+
+                                    <polygon points="435,40 445,35 445,45" fill="#D4AF37"/>
+                                    <line x1="430" y1="40" x2="445" y2="40" stroke="#D4AF37" stroke-width="3"/>
+
+                                    <!-- Paso 4 -->
+                                    <rect x="450" y="0" width="130" height="80" rx="8" fill="#D4AF37"/>
+                                    <text x="515" y="32" font-size="12" font-weight="bold" fill="#001A4D" text-anchor="middle">4. TRATAR</text>
+                                    <text x="515" y="52" font-size="10" fill="#001A4D" text-anchor="middle">Mitigar/Transferir</text>
+
+                                    <polygon points="585,40 595,35 595,45" fill="#002B7F"/>
+                                    <line x1="580" y1="40" x2="595" y2="40" stroke="#002B7F" stroke-width="3"/>
+
+                                    <!-- Paso 5 -->
+                                    <rect x="600" y="0" width="120" height="80" rx="8" fill="#0A192F"/>
+                                    <text x="660" y="32" font-size="12" font-weight="bold" fill="#A7F3D0" text-anchor="middle">5. AUDITAR</text>
+                                    <text x="660" y="52" font-size="10" fill="#E2E8F0" text-anchor="middle">Monitoreo continuo</text>
+                                </g>
+                                <text x="380" y="175" font-size="12" fill="#4A5568" text-anchor="middle">Opciones de Tratamiento: Mitigar (controles) | Transferir (ciberseguro) | Evitar (cancelar proceso) | Aceptar (formal)</text>
+                            </svg>
+                            <p class="diagrama-epigrafe">Figura 3.1: Ciclo estandarizado de Análisis y Tratamiento de Riesgos en TIC (ISO 27005 / MAGERIT).</p>
+                        </div>
+
+                        <ul class="lista-conceptos">
+                            <li><strong>Análisis de Vulnerabilidades (Vulnerability Assessment):</strong> Proceso técnico automatizado mediante el cual se escanean puertos, servicios de red y versiones de software en busca de brechas documentadas en bases de datos CVE. Herramientas líderes: <em>OpenVAS / Greenbone, Nessus, Qualys</em>.</li>
+                            <li><strong>Pruebas de Penetración (Pentesting Ético):</strong> Simulación controlada y autorizada de un ataque informático real para evaluar la efectividad real de las defensas. Modalidades: <em>Caja Negra</em> (sin información previa del objetivo), <em>Caja Gris</em> (con información parcial) y <em>Caja Blanca</em> (con acceso total a código fuente y diagramas).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Subtema 3.6 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">3.6</span> Normatividad Internacional y Nacional Vigente</h4>
+                        <p class="subtema-texto">
+                            La formación del informático universitario en la UNAM exige un conocimiento exhaustivo de la regulación vigente tanto a escala global como en los ordenamientos jurídicos de los Estados Unidos Mexicanos:
+                        </p>
+
+                        <div class="nota-pedagogica exito">
+                            <h5>Marco Normativo Internacional:</h5>
+                            <p><strong>Familia ISO/IEC 27000:</strong> La norma <strong>ISO/IEC 27001</strong> fija los requerimientos para establecer, operar, mantener y certificar un Sistema de Gestión de la Seguridad de la Información (SGSI). La norma complementaria <strong>ISO/IEC 27002</strong> provee el catálogo detallado de controles organizacionales, de personal, físicos y tecnológicos.</p>
+                        </div>
+
+                        <div class="nota-pedagogica alerta">
+                            <h5>Legislación Mexicana Vigente en Delitos Informáticos:</h5>
+                            <p><strong>1. Código Penal Federal (México) - Libro Segundo, Título Noveno:</strong> Delitos contra la indemnidad de la privacidad y la información, normados en los <strong>Artículos 211 bis 1 al 211 bis 7</strong>. Tipifican y sancionan con prisión y multas económicas a quien sin autorización modifique, destruya, copie o acceda a sistemas y equipos de informática. Establece penas agravadas si se afecta al sistema financiero nacional o a instituciones del Estado mexicano.</p>
+                            <p style="margin-top: 8px;"><strong>2. Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</strong> y <strong>Ley General (LGPDPPSO):</strong> Regula el tratamiento legítimo de datos personales, garantizando el ejercicio de los Derechos ARCO (Acceso, Rectificación, Cancelación y Oposición), con supervisión del INAI y la obligación estricta de notificar brechas de seguridad que afecten significativamente los derechos de los titulares.</p>
+                        </div>
+                    </div>
+
+                    <!-- VIDEOTECA UNAM -->
+                    <div class="seccion-videoteca">
+                        <div class="seccion-videoteca-titulo">
+                            <span>🎥 Videoteca Académica UNAM: Normatividad y Gestión</span>
+                        </div>
+                        <p class="seccion-videoteca-sub">Divulgación y ponencias sobre aspectos jurídicos, marco regulatorio en México y gestión institucional.</p>
+                        
+                        <div class="videos-grid">
+                            <div class="video-card">
+                                <div class="video-embed-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/bMKy1PlTl8s?rel=0" title="Ciberseguridad. La UNAM responde 726" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="video-info">
+                                    <span class="video-emisor-badge">TV UNAM / La UNAM Responde</span>
+                                    <h5 class="video-titulo">Ciberseguridad y Protección de Datos Personales (Emisión 726)</h5>
+                                    <p class="video-desc">Especialistas de la UNAM analizan el marco legal en México, los riesgos del robo de identidad y las responsabilidades corporativas frente a ciberataques.</p>
+                                    <div class="video-acciones">
+                                        <a href="https://www.youtube.com/watch?v=bMKy1PlTl8s" target="_blank" class="btn-video-yt">▶ Ver en YouTube Oficial ↗</a>
+                                        <a href="https://www.youtube.com/@TVUNAM" target="_blank" class="btn-video-canal">Canal TV UNAM ↗</a>
+                                    </div>
+                                    <p class="video-aviso"><small>ℹ️ Si tu navegador restringe la reproducción local en file://, pulsa "Ver en YouTube Oficial".</small></p>
+                                </div>
+                            </div>
+
+                            <div class="video-card">
+                                <div class="video-embed-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/Tq7gokRMA24?rel=0" title="Tipos de delitos cibernéticos - Semana de Ciberseguridad UNAM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="video-info">
+                                    <span class="video-emisor-badge">Semana de la Ciberseguridad UNAM</span>
+                                    <h5 class="video-titulo">Tipos de Delitos Cibernéticos y Normatividad</h5>
+                                    <p class="video-desc">Ponencia universitaria sobre la tipificación jurídica de las intrusiones digitales, el Código Penal Federal mexicano y el diseño de políticas institucionales.</p>
+                                    <div class="video-acciones">
+                                        <a href="https://www.youtube.com/watch?v=Tq7gokRMA24" target="_blank" class="btn-video-yt">▶ Ver en YouTube Oficial ↗</a>
+                                        <a href="https://seguridad.cudi.edu.mx/" target="_blank" class="btn-video-canal">Comité RedCUDI ↗</a>
+                                    </div>
+                                    <p class="video-aviso"><small>ℹ️ Si tu navegador restringe la reproducción local en file://, pulsa "Ver en YouTube Oficial".</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FUENTES -->
+                    <div class="fuentes-container">
+                        <div class="fuentes-titulo">
+                            <span>📚 Fuentes de Consulta Oficiales del Temario UNAM</span>
+                        </div>
+                        <div class="fuentes-grid">
+                            <div class="fuente-item">
+                                <h6>RedCUDI - Grupo de Seguridad</h6>
+                                <p><em>Legislación informática en México</em>. Documento del Comité de Seguridad de la Red Nacional de Educación e Investigación. <a href="http://seguridad.cudi.edu.mx/" target="_blank">seguridad.cudi.edu.mx</a></p>
+                            </div>
+                            <div class="fuente-item">
+                                <h6>Código Penal Federal (México)</h6>
+                                <p>Cámara de Diputados del H. Congreso de la Unión. Artículos 211 bis 1 al 211 bis 7 relativos al acceso ilícito a sistemas y equipos de informática.</p>
+                            </div>
+                            <div class="fuente-item">
+                                <h6>Howard, Michael et al. (2007)</h6>
+                                <p><em>19 puntos críticos sobre seguridad de software: fallas de programación y cómo corregirlas</em>. McGraw-Hill. Enfoque preventivo y normativo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="recursos-nav-footer">
+                    <button class="btn-nav-unidad" onclick="seleccionarUnidadRecurso(2)">← Ir a Unidad 2</button>
+                    <button class="btn-nav-unidad" onclick="seleccionarUnidadRecurso(4)">Ir a Unidad 4: Detección de Intrusos →</button>
+                </div>
+            </div>
+
+            <!-- CONTENEDOR UNIDAD 4 -->
+            <div class="unidad-recurso-panel" id="panel-unidad-4">
+                <div class="unidad-detalle-header">
+                    <div class="unidad-detalle-info">
+                        <span class="tema-badge">Unidad Temática 4</span>
+                        <h3>4. Detección de Intrusos</h3>
+                        <div class="unidad-meta-tags">
+                            <span class="tag-badge tag-horas">⏱ 9 Horas Teóricas | 10 Prácticas</span>
+                            <span class="tag-badge tag-carrera">Lic. en Informática - FES Cuautitlán</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unidad-objetivo-box">
+                    <strong>Objetivo de la Unidad:</strong>
+                    <p>El estudiante diseñará mecanismos integrales de seguridad lógica y física para proteger la infraestructura informática, implementará sistemas de detección y prevención de intrusos (IDS/IPS) y utilizará herramientas avanzadas de auditoría técnica y análisis de riesgos.</p>
+                </div>
+
+                <div class="unidad-contenido">
+                    
+                    <!-- Subtema 4.1 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">4.1</span> Mecanismos de Seguridad</h4>
+                        <p class="subtema-texto">
+                            La defensa integral de los centros de cómputo y servidores institucionales opera en dos dimensiones rigurosamente entrelazadas:
+                        </p>
+
+                        <h5 style="color: var(--azul-institucional); margin: 16px 0 8px 0;">4.1.1. Seguridad Lógica:</h5>
+                        <ul class="lista-conceptos">
+                            <li><strong>Autenticación Multifactor (MFA / 2FA):</strong> Validación basada en la combinación de al menos dos factores independientes de categorías distintas: <em>Algo que sabes</em> (contraseña o PIN), <em>Algo que tienes</em> (token TOTP o llave FIDO2/U2F) o <em>Algo que eres</em> (huella dactilar, biometría facial o iris).</li>
+                            <li><strong>Modelos de Control de Acceso:</strong> <em>RBAC (Role-Based Access Control)</em> que asigna permisos según el rol profesional del usuario en la institución, y <em>ABAC (Attribute-Based Access Control)</em> que evalúa atributos contextuales como horario, ubicación IP y estado de seguridad del equipo.</li>
+                            <li><strong>Hardening o Bastionado de Servidores:</strong> Desactivación sistemática de puertos y protocolos innecesarios, eliminación de cuentas por defecto, configuración estricta de políticas de contraseñas y aplicación inmediata de parches de seguridad del kernel.</li>
+                            <li><strong>Auditoría Centralizada y SIEM:</strong> Envío de bitácoras de eventos (`syslog`) a un sistema de gestión de información y eventos de seguridad (SIEM) para correlación automatizada y detección temprana.</li>
+                        </ul>
+
+                        <h5 style="color: var(--azul-institucional); margin: 16px 0 8px 0;">4.1.2. Seguridad Física:</h5>
+                        <ul class="lista-conceptos">
+                            <li><strong>Control de Acceso Perimetral:</strong> Múltiples esclusas de seguridad con doble autenticación biométrica y registro de bitácora para ingresar al Centro de Datos (Datacenter).</li>
+                            <li><strong>Climatización y Control Ambiental (HVAC):</strong> Mantenimiento de temperatura estable entre 18°C y 22°C y humedad relativa controlada (40% - 55%) para evitar sobrecalentamiento o descargas electrostáticas que dañen los componentes electrónicos.</li>
+                            <li><strong>Sistemas de Supresión de Incendios por Gas Limpio:</strong> Empleo de agentes gaseosos inertes (Novec 1230 o FM-200) que inundan la sala en segundos sofocando el fuego sin emplear agua ni dejar residuos químicos, preservando la integridad de los racks y servidores.</li>
+                            <li><strong>Redundancia Eléctrica:</strong> Doble acometida comercial, sistemas ininterrumpidos de potencia (UPS On-line de doble conversión) y generadores eléctricos diésel de arranque automático ante cortes prolongados de energía.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Subtema 4.2 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">4.2</span> Herramientas de Análisis de Riesgos y Detección de Intrusos</h4>
+                        <p class="subtema-texto">
+                            Un <strong>IDS (Intrusion Detection System)</strong> es una solución de monitoreo pasivo que inspecciona el tráfico de red o las actividades de un sistema en busca de comportamientos maliciosos o violaciones de políticas, generando alertas automáticas para el equipo de seguridad. Por su parte, un <strong>IPS (Intrusion Prevention System)</strong> se coloca en línea (in-line) dentro del flujo de datos, teniendo la capacidad operativa de bloquear o descartar de inmediato los paquetes hostiles detectados.
+                        </p>
+
+                        <!-- DIAGRAMA SVG ARQUITECTURA IDS/IPS -->
+                        <div class="diagrama-contenedor">
+                            <svg viewBox="0 0 760 300" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="760" height="300" fill="#F8FAFC" rx="12"/>
+                                
+                                <!-- Internet / Atacante -->
+                                <rect x="30" y="110" width="110" height="70" rx="8" fill="#C62828"/>
+                                <text x="85" y="145" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">INTERNET</text>
+                                <text x="85" y="165" font-size="10" fill="#FFCDD2" text-anchor="middle">(Tráfico Externo)</text>
+
+                                <line x1="140" y1="145" x2="200" y2="145" stroke="#002B7F" stroke-width="3"/>
+
+                                <!-- Firewall Perimetral -->
+                                <rect x="200" y="95" width="100" height="100" rx="8" fill="#D4AF37" stroke="#001A4D" stroke-width="2"/>
+                                <text x="250" y="140" font-size="12" font-weight="bold" fill="#001A4D" text-anchor="middle">FIREWALL</text>
+                                <text x="250" y="160" font-size="10" fill="#001A4D" text-anchor="middle">Perimetral</text>
+
+                                <line x1="300" y1="145" x2="360" y2="145" stroke="#002B7F" stroke-width="3"/>
+
+                                <!-- Switch Central con Puerto Espejo SPAN -->
+                                <rect x="360" y="80" width="110" height="130" rx="8" fill="#002B7F"/>
+                                <text x="415" y="130" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">SWITCH LAN</text>
+                                <text x="415" y="150" font-size="9" fill="#A7F3D0" text-anchor="middle">[Puerto SPAN]</text>
+
+                                <!-- NIDS en Puerto Espejo -->
+                                <line x1="415" y1="80" x2="415" y2="40" stroke="#EF4444" stroke-width="2" stroke-dasharray="4"/>
+                                <rect x="345" y="10" width="140" height="40" rx="6" fill="#FFFFFF" stroke="#EF4444" stroke-width="2"/>
+                                <text x="415" y="28" font-size="10" font-weight="bold" fill="#EF4444" text-anchor="middle">NIDS (Snort / Suricata)</text>
+                                <text x="415" y="42" font-size="8" fill="#4A5568" text-anchor="middle">Inspección de Tráfico Copia</text>
+
+                                <!-- Conexión a Servidores Internos -->
+                                <line x1="470" y1="145" x2="540" y2="145" stroke="#002B7F" stroke-width="3"/>
+
+                                <!-- Servidores con HIDS -->
+                                <rect x="540" y="70" width="180" height="150" rx="8" fill="#FFFFFF" stroke="#002B7F" stroke-width="2"/>
+                                <rect x="540" y="70" width="180" height="28" rx="8" fill="#002B7F"/>
+                                <text x="630" y="88" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">SERVIDORES INTERNOS</text>
+                                
+                                <rect x="555" y="110" width="150" height="40" rx="4" fill="#EBF1F9" stroke="#CBD5E1"/>
+                                <text x="630" y="128" font-size="10" font-weight="bold" fill="#001A4D" text-anchor="middle">HIDS (Wazuh / OSSEC)</text>
+                                <text x="630" y="142" font-size="8" fill="#4A5568" text-anchor="middle">Monitoreo de Logs y Archivos</text>
+
+                                <rect x="555" y="160" width="150" height="45" rx="4" fill="#F8FAFC" stroke="#CBD5E1"/>
+                                <text x="630" y="178" font-size="10" font-weight="bold" fill="#002B7F" text-anchor="middle">Base de Datos FESC</text>
+                                <text x="630" y="195" font-size="8" fill="#718096" text-anchor="middle">Activo Crítico Protegido</text>
+                            </svg>
+                            <p class="diagrama-epigrafe">Figura 4.1: Despliegue arquitectónico de un sistema NIDS mediante puerto SPAN y HIDS en el servidor anfitrión.</p>
+                        </div>
+
+                        <!-- TERMINAL PRÁCTICA SNORT & NMAP -->
+                        <div class="terminal-card">
+                            <div class="terminal-header">
+                                <div class="terminal-dots">
+                                    <div class="dot rojo"></div>
+                                    <div class="dot amarillo"></div>
+                                    <div class="dot verde"></div>
+                                </div>
+                                <span>Laboratorio de Redes: Auditoría con Nmap y Reglas de Snort (FESC UNAM)</span>
+                            </div>
+                            <div class="terminal-body">
+                                <span class="comment"># 1. Escaneo sigiloso TCP SYN (-sS) con detección de versiones (-sV) y SO (-O):</span><br>
+                                <span class="cmd">$ nmap -sS -sV -O -p 22,80,443,3306 192.168.1.100</span><br>
+                                <span class="output">PORT     STATE SERVICE VERSION</span><br>
+                                <span class="output">22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu</span><br>
+                                <span class="output">80/tcp   open  http    Apache httpd 2.4.52</span><br>
+                                <span class="output">443/tcp  open  ssl/ssl OpenSSL 3.0.2</span><br><br>
+
+                                <span class="comment"># 2. Regla de detección de Snort para alertar inyecciones SQL en peticiones HTTP:</span><br>
+                                <span class="cmd">alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS 80 (msg:"ALERTA FESC: Posible Inyeccion SQL detectada"; flow:to_server,established; content:"UNION SELECT"; nocase; sid:1000001; rev:1;)</span>
+                            </div>
+                        </div>
+
+                        <ul class="lista-conceptos">
+                            <li><strong>NIDS (Network IDS):</strong> Inspecciona en tiempo real las tramas que circulan por el segmento de red mediante interfaces operando en modo promiscuo conectadas a puertos espejo (SPAN) del conmutador de red. Ejemplos: <em>Snort, Suricata, Zeek</em>.</li>
+                            <li><strong>HIDS (Host IDS):</strong> Agente instalado directamente en el sistema operativo del servidor que audita registros de autenticación (`/var/log/auth.log`, Event Viewer), llamadas al sistema y la integridad de binarios críticos. Ejemplos: <em>Wazuh, OSSEC, Tripwire</em>.</li>
+                            <li><strong>Detección por Firmas vs. Anomalías:</strong> La detección por firmas contrasta el tráfico contra patrones conocidos de ataques con alta velocidad y bajo margen de falsos positivos; la detección por anomalías establece una línea base estadística de conducta normal y dispara alertas ante desviaciones inusuales, detectando amenazas desconocidas (Zero-Days).</li>
+                        </ul>
+                    </div>
+
+                    <!-- VIDEOTECA UNAM -->
+                    <div class="seccion-videoteca">
+                        <div class="seccion-videoteca-titulo">
+                            <span>🎥 Videoteca Académica UNAM: Detección y Monitoreo</span>
+                        </div>
+                        <p class="seccion-videoteca-sub">Tutoriales y seminarios técnicos de TV UNAM, DGTIC y UNAM-CERT para administradores de sistemas.</p>
+                        
+                        <div class="videos-grid">
+                            <div class="video-card">
+                                <div class="video-embed-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/TUfh4KtEluM?rel=0" title="Ciberdetectives y Monitoreo de Intrusiones - TV UNAM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="video-info">
+                                    <span class="video-emisor-badge">TV UNAM / No Memes</span>
+                                    <h5 class="video-titulo">Ciberdetectives: Monitoreo, Intrusos y Rastreo Digital</h5>
+                                    <p class="video-desc">Emisión universitaria analizando cómo operan los analistas de seguridad, el uso de analizadores de tráfico y la detección forense de intrusiones en redes.</p>
+                                    <div class="video-acciones">
+                                        <a href="https://www.youtube.com/watch?v=TUfh4KtEluM" target="_blank" class="btn-video-yt">▶ Ver en YouTube Oficial ↗</a>
+                                        <a href="https://www.youtube.com/@TVUNAM" target="_blank" class="btn-video-canal">Canal TV UNAM ↗</a>
+                                    </div>
+                                    <p class="video-aviso"><small>ℹ️ Si tu navegador restringe la reproducción local en file://, pulsa "Ver en YouTube Oficial".</small></p>
+                                </div>
+                            </div>
+
+                            <div class="video-card">
+                                <div class="video-embed-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/W97uXG0VUfU?rel=0" title="Procesos de Detección y Seguridad TIC - UNAM CERT" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="video-info">
+                                    <span class="video-emisor-badge">UNAM-CERT / @SeguridadTV</span>
+                                    <h5 class="video-titulo">Procesos de Detección y Mitigación de Incidentes</h5>
+                                    <p class="video-desc">Metodologías operativas del Equipo de Respuesta a Incidentes de la UNAM para detección de actividades anómalas, contención de brechas y correlación de eventos.</p>
+                                    <div class="video-acciones">
+                                        <a href="https://www.youtube.com/watch?v=W97uXG0VUfU" target="_blank" class="btn-video-yt">▶ Ver en YouTube Oficial ↗</a>
+                                        <a href="https://www.unam-cert.unam.mx/" target="_blank" class="btn-video-canal">Portal UNAM-CERT ↗</a>
+                                    </div>
+                                    <p class="video-aviso"><small>ℹ️ Si tu navegador restringe la reproducción local en file://, pulsa "Ver en YouTube Oficial".</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FUENTES -->
+                    <div class="fuentes-container">
+                        <div class="fuentes-titulo">
+                            <span>📚 Fuentes de Consulta Oficiales del Temario UNAM</span>
+                        </div>
+                        <div class="fuentes-grid">
+                            <div class="fuente-item">
+                                <h6>Newman, Robert (2010)</h6>
+                                <p><em>Computer security: protecting digital resources</em>. Jones and Bartlett. Capítulos sobre sistemas de detección de intrusos y control de acceso físico/lógico.</p>
+                            </div>
+                            <div class="fuente-item">
+                                <h6>De Capite, Dave (2006)</h6>
+                                <p><em>Self-Defending Networks: The Next Generation of Network Security</em>. Cisco Press. Arquitectura de respuesta adaptativa e IPS en conmutadores y enrutadores.</p>
+                            </div>
+                            <div class="fuente-item">
+                                <h6>UNAM-CERT (Equipo de Respuesta a Incidentes)</h6>
+                                <p>Guías operativas de monitoreo de incidentes y análisis forense digital. <a href="https://www.unam-cert.unam.mx/" target="_blank">www.unam-cert.unam.mx</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="recursos-nav-footer">
+                    <button class="btn-nav-unidad" onclick="seleccionarUnidadRecurso(3)">← Ir a Unidad 3</button>
+                    <button class="btn-nav-unidad" onclick="seleccionarUnidadRecurso(5)">Ir a Unidad 5: Código Malicioso →</button>
+                </div>
+            </div>
+
+            <!-- CONTENEDOR UNIDAD 5 -->
+            <div class="unidad-recurso-panel" id="panel-unidad-5">
+                <div class="unidad-detalle-header">
+                    <div class="unidad-detalle-info">
+                        <span class="tema-badge">Unidad Temática 5</span>
+                        <h3>5. Código Malicioso</h3>
+                        <div class="unidad-meta-tags">
+                            <span class="tag-badge tag-horas">⏱ 9 Horas Teóricas | 10 Prácticas</span>
+                            <span class="tag-badge tag-carrera">Lic. en Informática - FES Cuautitlán</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unidad-objetivo-box">
+                    <strong>Objetivo de la Unidad:</strong>
+                    <p>El estudiante comprenderá la taxonomía completa del malware, su ciclo de vida y mecanismos de infección, analizará los ataques de denegación de servicio (DoS/DDoS) y las técnicas de captura de paquetes en modo promiscuo (Sniffers), implementando contramedidas de mitigación en entornos de red.</p>
+                </div>
+
+                <div class="unidad-contenido">
+                    
+                    <!-- Subtema 5.1 Completo -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">5.1</span> Clasificación y Mecanismos de Ataque por Código Malicioso</h4>
+                        <p class="subtema-texto">
+                            El <strong>código malicioso (malware)</strong> comprende cualquier programa informático, fragmento de código o script diseñado de manera deliberada para infiltrarse, dañar, alterar o sustraer información de un sistema sin la debida autorización de su propietario legítimo.
+                        </p>
+
+                        <!-- TAXONOMÍA DE MALWARE -->
+                        <div class="tabla-wrapper">
+                            <table class="tabla-comparativa">
+                                <thead>
+                                    <tr>
+                                        <th>Tipo de Ataque / Malware</th>
+                                        <th>Mecanismo de Infección y Operación</th>
+                                        <th>Vector de Propagación</th>
+                                        <th>Impacto Típico en el Sistema</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>5.1.1. DoS / DDoS (Negación de Servicio)</strong></td>
+                                        <td>Inundación volumétrica o agotamiento de recursos (CPU, memoria, descriptores de sockets TCP) hacia un objetivo. En DDoS intervienen miles de equipos infectados controlados remotamente (<em>Botnets</em>).</td>
+                                        <td>SYN Flood, UDP Flood, Amplificación DNS/NTP, peticiones HTTP Slowloris.</td>
+                                        <td>Inaccesibilidad total del servicio para usuarios legítimos, caída de portales web y servicios transaccionales.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>5.1.2. Troyanos (Caballos de Troya)</strong></td>
+                                        <td>Programa que aparenta ser útil, legítimo o inofensivo (un juego, visor de PDF o actualización), pero oculta una carga destructiva en segundo plano. No se autorreplica por sí solo.</td>
+                                        <td>Descargas engañosas, ingeniería social (phishing), instaladores piratas.</td>
+                                        <td>Instalación de puertas traseras (Backdoors), troyanos de acceso remoto (RAT), espionaje de pulsaciones de teclado (Keyloggers).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>5.1.3. Virus</strong></td>
+                                        <td>Código malicioso autorreplicante que requiere adherirse a un archivo anfitrión legítimo (ejecutable `.exe`, script o macro de ofimática). Requiere la intervención del usuario para ejecutarse.</td>
+                                        <td>Ejecución de archivos infectados compartidos por correo, memorias USB o carpetas compartidas.</td>
+                                        <td>Corrupción de ficheros del sistema operativo, destrucción de sectores de arranque (MBR/GPT) y alteración de datos.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>5.1.4. Gusanos (Worms)</strong></td>
+                                        <td>Programa malicioso autónomo capaz de replicarse y viajar de un equipo a otro a través de la red de manera totalmente independiente, sin necesidad de archivo portador ni acción humana.</td>
+                                        <td>Explotación directa de vulnerabilidades de red en puertos y servicios desprotegidos (ej. SMB, RPC).</td>
+                                        <td>Saturación del ancho de banda de la red corporativa, propagación epidémica masiva (ej. Morris Worm, SQL Slammer, WannaCry).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>5.1.5. Bombas Lógicas</strong></td>
+                                        <td>Segmento de código embebido intencionalmente en un software legítimo que permanece dormido hasta que se satisface una condición lógica o temporal específica.</td>
+                                        <td>Inserción deliberada por desarrolladores o administradores deshonestos (insider threat).</td>
+                                        <td>Al cumplirse la fecha o evento (ej. borrado del registro de nómina del empleado), detona el borrado masivo de discos o bases de datos.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>5.1.6. Sniffers (Modo Promiscuo)</strong></td>
+                                        <td>Herramientas de software o hardware que configuran la tarjeta de red (NIC) en <em>modo promiscuo</em> para capturar e inspeccionar todos los paquetes transmitidos por el segmento físico.</td>
+                                        <td>Intercepción pasiva en redes Wi-Fi abiertas o envenenamiento de tablas ARP (ARP Spoofing) en redes conmutadas.</td>
+                                        <td>Robo de credenciales en texto plano (HTTP, FTP, Telnet), inspección no autorizada de correspondencia digital confidencial.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- DIAGRAMA SVG DE BOTNET Y ATAQUE DDOS -->
+                        <div class="diagrama-contenedor">
+                            <svg viewBox="0 0 760 300" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="760" height="300" fill="#F8FAFC" rx="12"/>
+                                
+                                <!-- Atacante / Botmaster -->
+                                <circle cx="80" cy="150" r="35" fill="#C62828" stroke="#001A4D" stroke-width="2"/>
+                                <text x="80" y="145" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">ATACANTE</text>
+                                <text x="80" y="160" font-size="9" fill="#FFCDD2" text-anchor="middle">(Botmaster)</text>
+
+                                <line x1="115" y1="150" x2="200" y2="150" stroke="#C62828" stroke-width="2" stroke-dasharray="4"/>
+
+                                <!-- Servidor C2 -->
+                                <rect x="200" y="120" width="100" height="60" rx="6" fill="#0A192F" stroke="#C62828" stroke-width="2"/>
+                                <text x="250" y="145" font-size="11" font-weight="bold" fill="#F8FAFC" text-anchor="middle">Servidor C2</text>
+                                <text x="250" y="162" font-size="8" fill="#EF4444" text-anchor="middle">(Command & Control)</text>
+
+                                <!-- Flechas hacia los Bots -->
+                                <line x1="300" y1="135" x2="380" y2="70" stroke="#EF4444" stroke-width="2"/>
+                                <line x1="300" y1="150" x2="380" y2="150" stroke="#EF4444" stroke-width="2"/>
+                                <line x1="300" y1="165" x2="380" y2="230" stroke="#EF4444" stroke-width="2"/>
+
+                                <!-- Grupo de Bots (Zombis) -->
+                                <rect x="380" y="45" width="100" height="45" rx="6" fill="#FFFFFF" stroke="#EF4444" stroke-width="2"/>
+                                <text x="430" y="65" font-size="10" font-weight="bold" fill="#C62828" text-anchor="middle">Dispositivo IoT 1</text>
+                                <text x="430" y="80" font-size="8" fill="#718096" text-anchor="middle">(Infectado)</text>
+
+                                <rect x="380" y="125" width="100" height="45" rx="6" fill="#FFFFFF" stroke="#EF4444" stroke-width="2"/>
+                                <text x="430" y="145" font-size="10" font-weight="bold" fill="#C62828" text-anchor="middle">PC Zombi 2</text>
+                                <text x="430" y="160" font-size="8" fill="#718096" text-anchor="middle">(Infectado)</text>
+
+                                <rect x="380" y="205" width="100" height="45" rx="6" fill="#FFFFFF" stroke="#EF4444" stroke-width="2"/>
+                                <text x="430" y="225" font-size="10" font-weight="bold" fill="#C62828" text-anchor="middle">Servidor Zombi 3</text>
+                                <text x="430" y="240" font-size="8" fill="#718096" text-anchor="middle">(Infectado)</text>
+
+                                <!-- Inundación de Tráfico hacia la Víctima -->
+                                <line x1="480" y1="70" x2="600" y2="135" stroke="#C62828" stroke-width="4"/>
+                                <line x1="480" y1="150" x2="600" y2="150" stroke="#C62828" stroke-width="4"/>
+                                <line x1="480" y1="230" x2="600" y2="165" stroke="#C62828" stroke-width="4"/>
+
+                                <!-- Objetivo Víctima (Servidor Web) -->
+                                <rect x="600" y="105" width="130" height="90" rx="8" fill="#002B7F" stroke="#D4AF37" stroke-width="3"/>
+                                <text x="665" y="140" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">SERVIDOR OBJETIVO</text>
+                                <text x="665" y="160" font-size="10" fill="#FDE68A" text-anchor="middle">(Colapsado por DDoS)</text>
+                                <text x="665" y="180" font-size="8" fill="#EF4444" text-anchor="middle">⚠ CPU al 100% / Cola Llena</text>
+                            </svg>
+                            <p class="diagrama-epigrafe">Figura 5.1: Topología de ataque distribuido de denegación de servicio (DDoS) orquestado por una red Botnet.</p>
+                        </div>
+
+                        <!-- TERMINAL PRÁCTICA MITIGACIÓN DDOS Y CAPTURA -->
+                        <div class="terminal-card">
+                            <div class="terminal-header">
+                                <div class="terminal-dots">
+                                    <div class="dot rojo"></div>
+                                    <div class="dot amarillo"></div>
+                                    <div class="dot verde"></div>
+                                </div>
+                                <span>Laboratorio Forense: Inspección con tcpdump y Mitigación con iptables (Linux)</span>
+                            </div>
+                            <div class="terminal-body">
+                                <span class="comment"># 1. Monitoreo de tráfico promiscuo en interfaz eth0 buscando peticiones HTTP GET:</span><br>
+                                <span class="cmd">$ sudo tcpdump -i eth0 -nn -A -s 0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12:2]&0xf0)>>2)) != 0)'</span><br><br>
+
+                                <span class="comment"># 2. Mitigar ataque de inundación SYN Flood limitando paquetes con iptables:</span><br>
+                                <span class="cmd">$ sudo iptables -A INPUT -p tcp --syn -m limit --limit 20/s --limit-burst 50 -j ACCEPT</span><br>
+                                <span class="cmd">$ sudo iptables -A INPUT -p tcp --syn -j DROP</span><br>
+                                <span class="output">[OK] Reglas de limitacion de tasa TCP SYN activas en iptables.</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- VIDEOTECA UNAM -->
+                    <div class="seccion-videoteca">
+                        <div class="seccion-videoteca-titulo">
+                            <span>🎥 Videoteca Académica UNAM: Malware y Virus</span>
+                        </div>
+                        <p class="seccion-videoteca-sub">Reportajes y cápsulas científicas de UNAM Global TV sobre virus informáticos, malware y ataques masivos.</p>
+                        
+                        <div class="videos-grid">
+                            <!-- VIDEO 1: WANNACRY UNAM GLOBAL -->
+                            <div class="video-card">
+                                <div class="video-embed-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/OENHrkO5uY0?rel=0" title="Ciberataque masivo por el virus WannaCry - UNAM Global" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="video-info">
+                                    <span class="video-emisor-badge">UNAM Global TV</span>
+                                    <h5 class="video-titulo">Ciberataque Masivo por el Virus Informático WannaCry</h5>
+                                    <p class="video-desc">Especialistas de la UNAM analizan el impacto mundial del ataque de ransomware WannaCry, la explotación del protocolo SMB y las medidas urgentes de vacunación digital.</p>
+                                    <div class="video-acciones">
+                                        <a href="https://www.youtube.com/watch?v=OENHrkO5uY0" target="_blank" class="btn-video-yt">▶ Ver en YouTube Oficial ↗</a>
+                                        <a href="https://www.youtube.com/@unamglobaltv" target="_blank" class="btn-video-canal">Canal UNAM Global ↗</a>
+                                    </div>
+                                    <p class="video-aviso"><small>ℹ️ Si tu navegador restringe la reproducción local en file://, pulsa "Ver en YouTube Oficial".</small></p>
+                                </div>
+                            </div>
+
+                            <!-- VIDEO 2: VIRUS Y AMENAZAS UNAM GLOBAL -->
+                            <div class="video-card">
+                                <div class="video-embed-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/jwdr3ayVcys?rel=0" title="Curiosidades de los virus - UNAM Global" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="video-info">
+                                    <span class="video-emisor-badge">UNAM Global TV</span>
+                                    <h5 class="video-titulo">Curiosidades y Mecanismos de los Virus Informáticos</h5>
+                                    <p class="video-desc">Cápsula didáctica que aborda la historia de las infecciones computacionales, caballos de Troya, gusanos y las estrategias de defensa para proteger la información personal.</p>
+                                    <div class="video-acciones">
+                                        <a href="https://www.youtube.com/watch?v=jwdr3ayVcys" target="_blank" class="btn-video-yt">▶ Ver en YouTube Oficial ↗</a>
+                                        <a href="https://www.unam-cert.unam.mx/" target="_blank" class="btn-video-canal">Portal UNAM-CERT ↗</a>
+                                    </div>
+                                    <p class="video-aviso"><small>ℹ️ Si tu navegador restringe la reproducción local en file://, pulsa "Ver en YouTube Oficial".</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FUENTES -->
+                    <div class="fuentes-container">
+                        <div class="fuentes-titulo">
+                            <span>📚 Fuentes de Consulta Oficiales del Temario UNAM</span>
+                        </div>
+                        <div class="fuentes-grid">
+                            <div class="fuente-item">
+                                <h6>Firtman, Salvador (2005)</h6>
+                                <p><em>Seguridad informática</em>. MP Ediciones. Capítulos 4 y 5 sobre malware, virus, bombas de tiempo y caballos de Troya.</p>
+                            </div>
+                            <div class="fuente-item">
+                                <h6>Stamp, Mark (2011)</h6>
+                                <p><em>Information Security: Principles and Practice</em>, 2da. Edición. Wiley. Modelos de análisis formal de gusanos, virus polimórficos y botnets.</p>
+                            </div>
+                            <div class="fuente-item">
+                                <h6>Revista Digital Universitaria (RDU - UNAM)</h6>
+                                <p>Artículos de divulgación científica y tecnológica sobre la evolución del software malicioso y las estrategias de defensa en la UNAM.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="recursos-nav-footer">
+                    <button class="btn-nav-unidad" onclick="seleccionarUnidadRecurso(4)">← Ir a Unidad 4</button>
+                    <button class="btn-nav-unidad" onclick="seleccionarUnidadRecurso(6)">Ir a Unidad 6: Seguridad en Redes →</button>
+                </div>
+            </div>
+
+            <!-- CONTENEDOR UNIDAD 6 -->
+            <div class="unidad-recurso-panel" id="panel-unidad-6">
+                <div class="unidad-detalle-header">
+                    <div class="unidad-detalle-info">
+                        <span class="tema-badge">Unidad Temática 6</span>
+                        <h3>6. Seguridad en Redes</h3>
+                        <div class="unidad-meta-tags">
+                            <span class="tag-badge tag-horas">⏱ 10 Horas Teóricas | 12 Prácticas</span>
+                            <span class="tag-badge tag-carrera">Lic. en Informática - FES Cuautitlán</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unidad-objetivo-box">
+                    <strong>Objetivo de la Unidad:</strong>
+                    <p>El estudiante diseñará e implementará esquemas de seguridad perimetral y segmentación de redes, configurará protocolos criptográficos de acceso remoto seguro (SSH), autenticación centralizada basada en tickets (Kerberos), protección de canal web (TLS/HTTPS), cortafuegos (Firewalls) y protocolos robustos en redes inalámbricas IEEE 802.11.</p>
+                </div>
+
+                <div class="unidad-contenido">
+                    
+                    <!-- Subtema 6.1 & 6.2 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">6.1 y 6.2</span> Esquemas y Niveles de Seguridad en Redes</h4>
+                        <p class="subtema-texto">
+                            La seguridad moderna de redes descarta el modelo tradicional de "castillo y foso", adoptando el principio de <strong>Defensa en Profundidad (Defense in Depth)</strong> y el paradigma <strong>Zero Trust ("Nunca confiar, siempre verificar")</strong>.
+                        </p>
+                        <p class="subtema-texto">
+                            En una arquitectura corporativa o universitaria se definen tres zonas elementales de red:
+                        </p>
+                        <ul class="lista-conceptos">
+                            <li><strong>Red Pública No Confiable (Internet):</strong> Entorno externo sin control administrativo de origen de las conexiones.</li>
+                            <li><strong>Zona Desmilitarizada (DMZ):</strong> Subred intermedia aislada donde residen los servidores que deben ser accesibles desde el exterior (Web, Correo, DNS). Si un servidor de la DMZ resulta comprometido, el cortafuegos impide el movimiento lateral hacia la red interna corporativa.</li>
+                            <li><strong>Red Interna Confiable (LAN Institucional):</strong> Subred protegida donde residen las bases de datos de alumnos, servidores de nómina y equipos administrativos.</li>
+                        </ul>
+
+                        <div class="tabla-wrapper">
+                            <table class="tabla-comparativa">
+                                <thead>
+                                    <tr>
+                                        <th>Capa OSI / TCP-IP</th>
+                                        <th>Mecanismos de Seguridad Aplicables</th>
+                                        <th>Protocolos Estándar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Capa 2: Enlace de Datos</strong></td>
+                                        <td>Autenticación de puerto por hardware, control de direcciones MAC, aislamiento VLAN.</td>
+                                        <td>IEEE 802.1X, Port Security, DHCP Snooping, Dynamic ARP Inspection.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Capa 3: Red (Internet)</strong></td>
+                                        <td>Cifrado y autenticación de paquetes IP completos para redes privadas virtuales (VPN).</td>
+                                        <td>IPSec (protocolos AH y ESP en modo transporte y túnel).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Capa 4: Transporte</strong></td>
+                                        <td>Establecimiento de canales criptográficos punto a punto sobre sockets de transporte TCP.</td>
+                                        <td>TLS 1.2 / TLS 1.3 (Transport Layer Security).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Capa 7: Aplicación</strong></td>
+                                        <td>Cifrado y control de integridad específico para cada protocolo de servicio final.</td>
+                                        <td>HTTPS (443), SSH (22), SFTP, DNSSEC, S/MIME.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Subtema 6.3 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">6.3</span> Kerberos: Autenticación Basada en Tickets</h4>
+                        <p class="subtema-texto">
+                            <strong>Kerberos</strong> es un protocolo de autenticación de red seguro concebido en el MIT que opera mediante criptografía simétrica con un <em>Tercero de Confianza</em> denominado <strong>KDC (Key Distribution Center)</strong>:
+                        </p>
+                        <ul class="lista-conceptos">
+                            <li><strong>Authentication Server (AS):</strong> Verifica la identidad inicial del usuario mediante su contraseña y le entrega un <strong>TGT (Ticket Granting Ticket)</strong> cifrado temporalmente.</li>
+                            <li><strong>Ticket Granting Server (TGS):</strong> Recibe el TGT legítimo del cliente y emite un <strong>Ticket de Servicio (Service Ticket)</strong> para un servidor específico (ej. servidor de archivos o correo).</li>
+                            <li><strong>Protección Antirrepetición:</strong> Todos los tickets incorporan marcas de tiempo (<em>timestamps</em>) con ventanas de expiración de pocos minutos, impidiendo que un atacante que capture un ticket en tránsito pueda reutilizarlo en un ataque de repetición (Replay Attack). Es el protocolo central del Directorio Activo (Active Directory) de Microsoft y de redes UNIX institucionales.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Subtema 6.4 & 6.5 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">6.4 y 6.5</span> SSH y SSL / TLS</h4>
+                        <p class="subtema-texto">
+                            <strong>SSH (Secure Shell):</strong> Reemplazo seguro, robusto y cifrado para los obsoletos protocolos en texto claro Telnet, rlogin y rsh. Opera por defecto en el puerto TCP 22. Emplea el algoritmo Diffie-Hellman para negociar una clave de sesión simétrica y permite la autenticación sin contraseña mediante pares de claves asimétricas de alta seguridad (claves RSA de 4096 bits o claves de curva elíptica Ed25519). Además de terminal remota, permite túneles cifrados (Port Forwarding y proxies dinámicos SOCKS5).
+                        </p>
+                        <p class="subtema-texto">
+                            <strong>SSL / TLS (Transport Layer Security):</strong> Protocolo estándar de la IETF para proteger el tráfico en Internet (HTTP sobre TLS = HTTPS en puerto 443). La versión moderna TLS 1.3 optimiza el <strong>Handshake TLS</strong> en un solo viaje de ida y vuelta (1-RTT), elimina algoritmos criptográficos débiles y garantiza <em>Perfect Forward Secrecy (PFS)</em>.
+                        </p>
+
+                        <!-- DIAGRAMA SVG DEL HANDSHAKE TLS -->
+                        <div class="diagrama-contenedor">
+                            <svg viewBox="0 0 760 280" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="760" height="280" fill="#F8FAFC" rx="12"/>
+                                
+                                <!-- Cliente -->
+                                <rect x="80" y="30" width="130" height="45" rx="6" fill="#002B7F"/>
+                                <text x="145" y="58" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">CLIENTE (Navegador)</text>
+
+                                <!-- Servidor -->
+                                <rect x="550" y="30" width="130" height="45" rx="6" fill="#002B7F"/>
+                                <text x="615" y="58" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">SERVIDOR WEB</text>
+
+                                <!-- Lineas de vida -->
+                                <line x1="145" y1="75" x2="145" y2="260" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4"/>
+                                <line x1="615" y1="75" x2="615" y2="260" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4"/>
+
+                                <!-- Paso 1: ClientHello -->
+                                <line x1="145" y1="105" x2="610" y2="105" stroke="#002B7F" stroke-width="2"/>
+                                <polygon points="615,105 605,100 605,110" fill="#002B7F"/>
+                                <text x="380" y="98" font-size="11" font-weight="bold" fill="#002B7F" text-anchor="middle">1. ClientHello (Suites Criptográficas + Parámetro Diffie-Hellman)</text>
+
+                                <!-- Paso 2: ServerHello -->
+                                <line x1="615" y1="145" x2="150" y2="145" stroke="#D4AF37" stroke-width="2"/>
+                                <polygon points="145,145 155,140 155,150" fill="#D4AF37"/>
+                                <text x="380" y="138" font-size="11" font-weight="bold" fill="#001A4D" text-anchor="middle">2. ServerHello + Certificado X.509 + Llave Efímera Servidor</text>
+
+                                <!-- Verificacion -->
+                                <rect x="60" y="165" width="170" height="24" rx="4" fill="#EBF8FF" stroke="#BEE3F8"/>
+                                <text x="145" y="181" font-size="9" fill="#2B6CB0" text-anchor="middle">Valida Certificado con CA Raíz</text>
+
+                                <!-- Canal Cifrado -->
+                                <rect x="230" y="210" width="300" height="40" rx="8" fill="#10B981" stroke="#047857" stroke-width="2"/>
+                                <text x="380" y="234" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🔒 CANAL SEGURO CIFRADO SIMÉTRICAMENTE</text>
+                            </svg>
+                            <p class="diagrama-epigrafe">Figura 6.1: Flujo simplificado del proceso de negociación criptográfica TLS 1.3 Handshake.</p>
+                        </div>
+                    </div>
+
+                    <!-- Subtema 6.6 & 6.7 -->
+                    <div class="subtema-bloque">
+                        <h4 class="subtema-titulo"><span class="num-badge">6.6 y 6.7</span> Firewalls y Seguridad en Redes Inalámbricas (802.11)</h4>
+                        
+                        <h5 style="color: var(--azul-institucional); margin: 16px 0 8px 0;">Tipos de Firewalls (Cortafuegos):</h5>
+                        <ul class="lista-conceptos">
+                            <li><strong>Filtrado de Paquetes sin Estado (Stateless):</strong> Evalúa individualmente cada paquete IP revisando cabeceras (IP origen/destino, puerto TCP/UDP) sin registrar el estado de la conexión.</li>
+                            <li><strong>Inspección con Estado (Stateful Inspection):</strong> Mantiene una tabla de conexiones activas en memoria, permitiendo automáticamente el tráfico de respuesta legítimo (`ESTABLISHED, RELATED`) y bloqueando paquetes huérfanos fraudulentos.</li>
+                            <li><strong>Firewalls de Aplicación (WAF) y NGFW:</strong> Cortafuegos de próxima generación que inspeccionan el payload en Capa 7, mitigando ataques de Inyección SQL, Cross-Site Scripting (XSS) y controlando el uso de aplicaciones específicas.</li>
+                        </ul>
+
+                        <!-- TERMINAL PRÁCTICA IPTABLES -->
+                        <div class="terminal-card">
+                            <div class="terminal-header">
+                                <div class="terminal-dots">
+                                    <div class="dot rojo"></div>
+                                    <div class="dot amarillo"></div>
+                                    <div class="dot verde"></div>
+                                </div>
+                                <span>Configuración de Servidor Linux: Reglas Stateful con iptables (FESC UNAM)</span>
+                            </div>
+                            <div class="terminal-body">
+                                <span class="comment"># 1. Política por defecto: Denegar todo el tráfico de entrada (DROP) y reenvío:</span><br>
+                                <span class="cmd">$ sudo iptables -P INPUT DROP</span><br>
+                                <span class="cmd">$ sudo iptables -P FORWARD DROP</span><br><br>
+
+                                <span class="comment"># 2. Permitir tráfico de bucle local (loopback) y conexiones ya establecidas:</span><br>
+                                <span class="cmd">$ sudo iptables -A INPUT -i lo -j ACCEPT</span><br>
+                                <span class="cmd">$ sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT</span><br><br>
+
+                                <span class="comment"># 3. Abrir puertos web autorizados (HTTP 80 y HTTPS 443) y SSH administrado (22):</span><br>
+                                <span class="cmd">$ sudo iptables -A INPUT -p tcp --dport 22 -s 192.168.1.0/24 -j ACCEPT</span><br>
+                                <span class="cmd">$ sudo iptables -A INPUT -p tcp -m multiport --dports 80,443 -j ACCEPT</span>
+                            </div>
+                        </div>
+
+                        <h5 style="color: var(--azul-institucional); margin: 24px 0 8px 0;">Evolución de la Seguridad en Redes Inalámbricas (IEEE 802.11):</h5>
+                        <ul class="lista-conceptos">
+                            <li><strong>WEP (Wired Equivalent Privacy):</strong> Cifrado RC4 con vector de inicialización corto de apenas 24 bits y claves estáticas. Completamente inseguro y vulnerable a ser descifrado en minutos con herramientas como <em>Aircrack-ng</em>. Totalmente en desuso.</li>
+                            <li><strong>WPA (Wi-Fi Protected Access):</strong> Parche provisional que implementó TKIP (Temporal Key Integrity Protocol) y verificación de integridad MIC.</li>
+                            <li><strong>WPA2 (802.11i):</strong> Estándar de la industria basado en el algoritmo <strong>AES-CCMP</strong> de 128 bits. Presentó vulnerabilidades teóricas en su <em>4-Way Handshake</em> conocidas como KRACK (Key Reinstallation Attack).</li>
+                            <li><strong>WPA3 (Estándar Actual):</strong> Introduce el protocolo <strong>SAE (Simultaneous Authentication of Equals / Dragonfly)</strong> que elimina por completo los ataques de diccionario offline contra contraseñas débiles, proporciona cifrado individualizado en redes públicas abiertas mediante OWE (Opportunistic Wireless Encryption) y suites de 192 bits en WPA3-Enterprise.</li>
+                        </ul>
+                    </div>
+
+                    <!-- VIDEOTECA UNAM -->
+                    <div class="seccion-videoteca">
+                        <div class="seccion-videoteca-titulo">
+                            <span>🎥 Videoteca Académica UNAM: Seguridad en Redes e Infraestructura</span>
+                        </div>
+                        <p class="seccion-videoteca-sub">Conferencias de la DGTIC y AprendeTIC UNAM sobre infraestructura de comunicaciones seguras y blindaje perimetral.</p>
+                        
+                        <div class="videos-grid">
+                            <!-- VIDEO 1: INFRAESTRUCTURA TIC DGTIC -->
+                            <div class="video-card">
+                                <div class="video-embed-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/n_bbwdtIIIg?rel=0" title="Infraestructura y Formación en Seguridad TIC UNAM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="video-info">
+                                    <span class="video-emisor-badge">UNAM Digital / DGTIC</span>
+                                    <h5 class="video-titulo">Infraestructura y Redes Seguras de la UNAM</h5>
+                                    <p class="video-desc">Presentación de la DGTIC UNAM sobre la formación en ciberseguridad, administración de enlaces de datos institucionales y defensa de redes académicas.</p>
+                                    <div class="video-acciones">
+                                        <a href="https://www.youtube.com/watch?v=n_bbwdtIIIg" target="_blank" class="btn-video-yt">▶ Ver en YouTube Oficial ↗</a>
+                                        <a href="https://www.unam-cert.unam.mx/" target="_blank" class="btn-video-canal">Sitio UNAM-CERT ↗</a>
+                                    </div>
+                                    <p class="video-aviso"><small>ℹ️ Si tu navegador restringe la reproducción local en file://, pulsa "Ver en YouTube Oficial".</small></p>
+                                </div>
+                            </div>
+
+                            <!-- VIDEO 2: CANALES CIFRADOS Y SERVIDORES SEGUROS -->
+                            <div class="video-card">
+                                <div class="video-embed-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/cEcv1GxiA9s?rel=0" title="Aseguramiento de Canales y Servidores Web - AprendeTIC UNAM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="video-info">
+                                    <span class="video-emisor-badge">AprendeTIC UNAM / DGTIC</span>
+                                    <h5 class="video-titulo">Aseguramiento de Canales de Comunicación y SSL/TLS</h5>
+                                    <p class="video-desc">Guía para configurar conexiones protegidas con TLS, hardening de puertos, prevención de intercepción de tráfico y buenas prácticas en servidores de red.</p>
+                                    <div class="video-acciones">
+                                        <a href="https://www.youtube.com/watch?v=cEcv1GxiA9s" target="_blank" class="btn-video-yt">▶ Ver en YouTube Oficial ↗</a>
+                                        <a href="https://www.youtube.com/@aprendeticunam2301" target="_blank" class="btn-video-canal">Canal AprendeTIC ↗</a>
+                                    </div>
+                                    <p class="video-aviso"><small>ℹ️ Si tu navegador restringe la reproducción local en file://, pulsa "Ver en YouTube Oficial".</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FUENTES -->
+                    <div class="fuentes-container">
+                        <div class="fuentes-titulo">
+                            <span>📚 Fuentes de Consulta Oficiales del Temario UNAM</span>
+                        </div>
+                        <div class="fuentes-grid">
+                            <div class="fuente-item">
+                                <h6>Stallings, William (2010)</h6>
+                                <p><em>Cryptography and Network Security: Principles and Practice</em>. Capítulos 17 a 20 (Kerberos, IPSec, SSL/TLS, Firewalls y redes inalámbricas IEEE 802.11i).</p>
+                            </div>
+                            <div class="fuente-item">
+                                <h6>De Capite, Dave (2006)</h6>
+                                <p><em>Self-Defending Networks</em>. Cisco Press. Esquemas de zonas DMZ, políticas de listas de control de acceso e inspección de estado.</p>
+                            </div>
+                            <div class="fuente-item">
+                                <h6>RedUNAM (Dirección General de Cómputo UNAM)</h6>
+                                <p>Lineamientos técnicos para la administración segura de redes departamentales y servicios web en facultades y centros de estudio.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="recursos-nav-footer">
+                    <button class="btn-nav-unidad" onclick="seleccionarUnidadRecurso(5)">← Ir a Unidad 5</button>
+                    <button class="btn-nav-unidad" onclick="cambiarVista('vista-evaluacion', document.getElementById('nav-evaluacion'))">Ir a Sección de Evaluación →</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ========================================== -->
+        <!-- VISTA 4: EVALUACIÓN (CRITERIOS Y QUIZ)     -->
+        <!-- ========================================== -->
+        <section id="vista-evaluacion" class="seccion-vista vista-oculta">
+            <div class="bienvenida">
+                <h3>Criterios de Evaluación y Autoevaluación Diagnóstica</h3>
+                <p>
+                    Conoce el esquema oficial para la acreditación del proceso de enseñanza-aprendizaje de Seguridad Informática (Clave: 702), según las sugerencias didácticas vigentes en el programa curricular de la Licenciatura en Informática de la FES Cuautitlán, UNAM.
+                </p>
+            </div>
+
+            <div class="evaluacion-card">
+                <h4>Mecanismos de Evaluación Sugeridos en el Programa Oficial</h4>
+                <p style="color: var(--texto-medio); margin-bottom: 20px;">
+                    La asignatura combina horas teóricas (3 hrs/semana) y horas de laboratorio de cómputo (2 hrs/semana), valorando tanto el dominio conceptual como la destreza técnica en herramientas de seguridad:
+                </p>
+                <div class="eval-criterios-grid">
+                    <div class="eval-criterio-box">
+                        <div class="porcentaje">40%</div>
+                        <div class="nombre">Exámenes Parciales y Examen Final</div>
+                    </div>
+                    <div class="eval-criterio-box">
+                        <div class="porcentaje">30%</div>
+                        <div class="nombre">Prácticas de Taller y Laboratorio (IDS, Firewalls, Cripto)</div>
+                    </div>
+                    <div class="eval-criterio-box">
+                        <div class="porcentaje">15%</div>
+                        <div class="nombre">Trabajos y Tareas de Investigación Fuera del Aula</div>
+                    </div>
+                    <div class="eval-criterio-box">
+                        <div class="porcentaje">15%</div>
+                        <div class="nombre">Exposición de Seminarios y Participación Activa</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CUESTIONARIO INTERACTIVO DE AUTOEVALUACIÓN -->
+            <div class="evaluacion-card">
+                <h4>Cuestionario de Autoevaluación Integral (6 Unidades)</h4>
+                <p style="color: var(--texto-medio); margin-bottom: 20px;">
+                    Pon a prueba tus conocimientos sobre los 6 módulos del temario antes de tus evaluaciones parciales. Selecciona la respuesta correcta en cada reactivo y obtén retroalimentación inmediata:
+                </p>
+
+                <div class="quiz-box" id="quiz-interactivo">
+                    <!-- Pregunta 1 -->
+                    <div class="pregunta-item" data-correcta="b">
+                        <div class="pregunta-texto">1. (Unidad 1) ¿Cuáles son los tres componentes de la Tríada fundamental de la seguridad de la información?</div>
+                        <div class="opciones-quiz">
+                            <label class="opcion-label"><input type="radio" name="p1" value="a"> A) Autenticación, Auditoría y Antivirus</label>
+                            <label class="opcion-label"><input type="radio" name="p1" value="b"> B) Confidencialidad, Integridad y Disponibilidad (CID)</label>
+                            <label class="opcion-label"><input type="radio" name="p1" value="c"> C) Firewall, DMZ y Token de acceso</label>
+                        </div>
+                        <div class="quiz-feedback" id="feedback-p1"></div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="pregunta-item" data-correcta="c">
+                        <div class="pregunta-texto">2. (Unidad 2) En criptografía asimétrica, ¿con qué clave se genera una firma digital para garantizar autenticidad y no repudio?</div>
+                        <div class="opciones-quiz">
+                            <label class="opcion-label"><input type="radio" name="p2" value="a"> A) Con la clave pública del receptor</label>
+                            <label class="opcion-label"><input type="radio" name="p2" value="b"> B) Con la clave pública del emisor</label>
+                            <label class="opcion-label"><input type="radio" name="p2" value="c"> C) Con la clave privada del emisor</label>
+                        </div>
+                        <div class="quiz-feedback" id="feedback-p2"></div>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="pregunta-item" data-correcta="a">
+                        <div class="pregunta-texto">3. (Unidad 3) ¿Qué artículos del Código Penal Federal de México tipifican y sancionan el acceso no autorizado y daño a sistemas informáticos?</div>
+                        <div class="opciones-quiz">
+                            <label class="opcion-label"><input type="radio" name="p3" value="a"> A) Artículos 211 bis 1 al 211 bis 7</label>
+                            <label class="opcion-label"><input type="radio" name="p3" value="b"> B) Artículos 100 al 110</label>
+                            <label class="opcion-label"><input type="radio" name="p3" value="c"> C) Artículos 16 y 17 Constitucionales</label>
+                        </div>
+                        <div class="quiz-feedback" id="feedback-p3"></div>
+                    </div>
+
+                    <!-- Pregunta 4 -->
+                    <div class="pregunta-item" data-correcta="b">
+                        <div class="pregunta-texto">4. (Unidad 4) ¿Cuál es la diferencia técnica fundamental entre un sistema IDS y un IPS en una red?</div>
+                        <div class="opciones-quiz">
+                            <label class="opcion-label"><input type="radio" name="p4" value="a"> A) El IDS solo funciona en Windows y el IPS en Linux</label>
+                            <label class="opcion-label"><input type="radio" name="p4" value="b"> B) El IDS monitorea y genera alertas de forma pasiva, mientras que el IPS está en línea y bloquea el tráfico malicioso</label>
+                            <label class="opcion-label"><input type="radio" name="p4" value="c"> C) El IDS es un dispositivo físico y el IPS es solo software de antivirus</label>
+                        </div>
+                        <div class="quiz-feedback" id="feedback-p4"></div>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="pregunta-item" data-correcta="c">
+                        <div class="pregunta-texto">5. (Unidad 5) ¿Qué tipo de malware se propaga de manera autónoma a través de la red sin necesidad de un archivo anfitrión ni intervención del usuario?</div>
+                        <div class="opciones-quiz">
+                            <label class="opcion-label"><input type="radio" name="p5" value="a"> A) Macro-virus de Word</label>
+                            <label class="opcion-label"><input type="radio" name="p5" value="b"> B) Caballo de Troya</label>
+                            <label class="opcion-label"><input type="radio" name="p5" value="c"> C) Gusano Informático (Worm)</label>
+                        </div>
+                        <div class="quiz-feedback" id="feedback-p5"></div>
+                    </div>
+
+                    <!-- Pregunta 6 -->
+                    <div class="pregunta-item" data-correcta="b">
+                        <div class="pregunta-texto">6. (Unidad 6) ¿Qué entidad central en la arquitectura del protocolo Kerberos se encarga de entregar los Tickets TGT a los usuarios legítimos?</div>
+                        <div class="opciones-quiz">
+                            <label class="opcion-label"><input type="radio" name="p6" value="a"> A) Servidor DNS institucional</label>
+                            <label class="opcion-label"><input type="radio" name="p6" value="b"> B) KDC a través del Authentication Server (AS)</label>
+                            <label class="opcion-label"><input type="radio" name="p6" value="c"> C) Switch con puerto SPAN</label>
+                        </div>
+                        <div class="quiz-feedback" id="feedback-p6"></div>
+                    </div>
+
+                    <button class="btn-calificar" onclick="calificarQuiz()">Evaluar mis Respuestas</button>
+                    <div id="resultado-quiz-total" style="margin-top: 18px; font-size: 1.15rem; font-weight: bold;"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA ESTÁTICO INSTITUCIONAL -->
+    <footer>
+        <p><strong>Facultad de Estudios Superiores Cuautitlán | Universidad Nacional Autónoma de México</strong></p>
+        <p>Licenciatura en Informática | Asignatura: Seguridad Informática (Clave: 702) | Séptimo Semestre</p>
+        <p class="creditos-pie">Plataforma Educativa para el Servicio Social y Apoyo a la Docencia - Material Curricular Oficial UNAM</p>
+    </footer>
+
+    <!-- SCRIPT DE NAVEGACIÓN Y CONTROL DINÁMICO DE RECURSOS -->
+    <script>
+        // 1. Cambiar entre las Vistas Principales (Inicio, Temario, Recursos, Evaluación)
+        function cambiarVista(idVista, elementoMenu) {
+            // Ocultar todas las secciones principales
+            const secciones = document.querySelectorAll('.seccion-vista');
+            secciones.forEach(function(sec) {
+                sec.classList.add('vista-oculta');
+            });
+            
+            // Mostrar la seleccionada
+            const vistaDestino = document.getElementById(idVista);
+            if (vistaDestino) {
+                vistaDestino.classList.remove('vista-oculta');
+            }
+            
+            // Actualizar estilo 'active' en el menú de navegación
+            const enlaces = document.querySelectorAll('nav a');
+            enlaces.forEach(function(enlace) {
+                enlace.classList.remove('active');
+            });
+            
+            if (elementoMenu) {
+                elementoMenu.classList.add('active');
+            }
+
+            // Scroll suave hacia la parte superior del contenido
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // 2. Cambiar de Unidad dentro de la Sección de Recursos
+        function seleccionarUnidadRecurso(numUnidad) {
+            // Ocultar todos los paneles de unidades
+            const paneles = document.querySelectorAll('.unidad-recurso-panel');
+            paneles.forEach(function(p) {
+                p.classList.remove('activo');
+            });
+
+            // Desmarcar todos los botones del selector
+            const botones = document.querySelectorAll('.selector-tema-btn');
+            botones.forEach(function(b) {
+                b.classList.remove('activo');
+            });
+
+            // Activar el panel seleccionado
+            const panelActivo = document.getElementById('panel-unidad-' + numUnidad);
+            if (panelActivo) {
+                panelActivo.classList.add('activo');
+            }
+
+            // Activar el botón correspondiente
+            const botonActivo = document.getElementById('tab-recurso-' + numUnidad);
+            if (botonActivo) {
+                botonActivo.classList.add('activo');
+            }
+
+            // Scroll suave hacia el encabezado del panel
+            if (panelActivo) {
+                panelActivo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // 3. Abrir directamente una unidad de Recursos desde las tarjetas del Inicio
+        function abrirTemaRecurso(numUnidad) {
+            // Ir a la vista de Recursos
+            const navRecursos = document.getElementById('nav-recursos');
+            cambiarVista('vista-recursos', navRecursos);
+            
+            // Seleccionar y desplegar la unidad correspondiente
+            seleccionarUnidadRecurso(numUnidad);
+        }
+
+        // 4. Calificar Cuestionario de Autoevaluación
+        function calificarQuiz() {
+            let correctas = 0;
+            const total = 6;
+            
+            for (let i = 1; i <= total; i++) {
+                const radios = document.getElementsByName('p' + i);
+                const feedback = document.getElementById('feedback-p' + i);
+                const item = feedback.closest('.pregunta-item');
+                const respuestaEsperada = item.getAttribute('data-correcta');
+                
+                let seleccionada = '';
+                for (let r of radios) {
+                    if (r.checked) {
+                        seleccionada = r.value;
+                        break;
+                    }
+                }
+
+                feedback.style.display = 'block';
+                if (seleccionada === respuestaEsperada) {
+                    correctas++;
+                    feedback.style.backgroundColor = '#F0FDF4';
+                    feedback.style.color = '#15803D';
+                    feedback.innerHTML = '<strong>✓ Correcto:</strong> ¡Excelente comprensión del concepto!';
+                } else if (seleccionada === '') {
+                    feedback.style.backgroundColor = '#FEF2F2';
+                    feedback.style.color = '#B91C1C';
+                    feedback.innerHTML = '<strong>⚠ Sin responder:</strong> La respuesta correcta era la opción (' + respuestaEsperada.toUpperCase() + ').';
+                } else {
+                    feedback.style.backgroundColor = '#FEF2F2';
+                    feedback.style.color = '#B91C1C';
+                    feedback.innerHTML = '<strong>✗ Incorrecto:</strong> La respuesta correcta es la opción (' + respuestaEsperada.toUpperCase() + ').';
+                }
+            }
+
+            const resultadoDiv = document.getElementById('resultado-quiz-total');
+            const porcentaje = Math.round((correctas / total) * 100);
+            
+            if (porcentaje >= 80) {
+                resultadoDiv.style.color = '#15803D';
+                resultadoDiv.innerHTML = 'Resultado: ' + correctas + '/' + total + ' (' + porcentaje + '%) - ¡Excelente dominio de los temas de Seguridad Informática!';
+            } else if (porcentaje >= 60) {
+                resultadoDiv.style.color = '#B45309';
+                resultadoDiv.innerHTML = 'Resultado: ' + correctas + '/' + total + ' (' + porcentaje + '%) - Buen avance, te sugerimos repasar los recursos multimedia de las unidades con error.';
+            } else {
+                resultadoDiv.style.color = '#B91C1C';
+                resultadoDiv.innerHTML = 'Resultado: ' + correctas + '/' + total + ' (' + porcentaje + '%) - Te recomendamos revisar a detalle las lecturas y videos de la sección de Recursos.';
+            }
+        }
+
+        // 5. Manejar Hash en la URL para enlaces directos (ej. temario.html -> index.html#recursos)
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash;
+            if (hash === '#vista-recursos' || hash === '#recursos') {
+                cambiarVista('vista-recursos', document.getElementById('nav-recursos'));
+            } else if (hash.startsWith('#recursos-')) {
+                const uNum = hash.replace('#recursos-', '');
+                abrirTemaRecurso(parseInt(uNum) || 1);
+            } else if (hash === '#vista-temario' || hash === '#temario') {
+                cambiarVista('vista-temario', document.getElementById('nav-temario'));
+            } else if (hash === '#vista-evaluacion' || hash === '#evaluacion') {
+                cambiarVista('vista-evaluacion', document.getElementById('nav-evaluacion'));
+            }
+        });
+    </script>
+
+</body>
+</html>
