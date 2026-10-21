@@ -9,8 +9,11 @@ Sitio web educativo interactivo desarrollado para la asignatura obligatoria **Se
 ---
 
 ## 🌐 Despliegue en GitHub Pages
-El sitio está optimizado para su visualización web mediante GitHub Pages:
+El sitio se despliega automáticamente en GitHub Pages con cada cambio publicado en la rama `main`. El workflow de GitHub Actions publica los archivos estáticos del repositorio, sin requerir compilación.
+
 🔗 **[Ver Sitio Web en Vivo](https://salvadorGoros.github.io/Seguridad-Inform-tica/)**
+
+Para habilitar el primer despliegue, en GitHub abre **Settings → Pages** y selecciona **GitHub Actions** como fuente de publicación. Después de subir los cambios, puedes consultar el resultado en la pestaña **Actions**.
 
 ---
 
